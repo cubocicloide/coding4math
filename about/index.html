@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>About - Coding4Math</title>
+  <title>Set-up - Coding4Math</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "About";
+    var mkdocs_page_name = "Set-up";
     var mkdocs_page_input_path = "about.md";
     var mkdocs_page_url = "/about/";
   </script>
@@ -49,12 +49,12 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="..">Home</a>
+    <a class="" href="..">Introduzione</a>
 	    </li>
           
             <li class="toctree-l1 current">
 		
-    <a class="current" href="./">About</a>
+    <a class="current" href="./">Set-up</a>
     <ul class="subnav">
             
     <li class="toctree-l2"><a href="#discrete-kalman-filter">Discrete Kalman Filter</a></li>
@@ -97,7 +97,7 @@
     
       
     
-    <li>About</li>
+    <li>Set-up</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -123,6 +123,9 @@
 <pre><code class="zsh">➜  project-directory    make
 </code></pre>
 
+<pre><code class="python">print('Hello World')
+</code></pre>
+
 <hr />
 <h2 id="run-the-program">Run the program</h2>
 <p>After the compilation, the <code>makefile</code> can be used to run the program, as follows:</p>
@@ -135,14 +138,22 @@
 <p>The program needs sudo privileges to be executed.</p>
 </li>
 <li>
-<p>The <code>makefile</code> can also be used to clean the program, in this case just run the command:
-    <code>zsh
-    ➜  project-directory    make clean</code></p>
+<p>The <code>makefile</code> can also be used to clean the program, in this case just run the command:</p>
 </li>
 </ol>
+<pre><code class="zsh">➜  project-directory    make clean
+</code></pre>
+
 <hr />
 <h2 id="further-informations">Further informations</h2>
-<p>For a detailed description of the project structure see the <a href="https://github.com/cubocicloide/kalman/blob/master/docs.pdf">docs</a>.</p>
+<p>For a detailed description of the project structure see the <a href="https://github.com/cubocicloide/kalman/blob/master/docs.pdf">docs</a>. 
+$$
+\begin{align}\tag{1}
+\label{eq:pythagoras}
+x^2 + y^2 = z^2
+\end{align} 
+$$</p>
+<p>As we can see from <span><span class="MathJax_Preview">\eqref{eq:pythagoras}</span><script type="math/tex">\eqref{eq:pythagoras}</script></span> all is well in Denmark. </p>
               
             </div>
           </div>
@@ -151,7 +162,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href=".." class="btn btn-neutral" title="Introduzione"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -161,9 +172,11 @@
   <div role="contentinfo">
     <!-- Copyright etc -->
     
+      <p>© Copyright 2018, Francesco Sasso.</p>
+    
   </div>
 
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  <!-- Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. -->
 </footer>
       
         </div>
@@ -184,6 +197,8 @@
 </div>
     <script>var base_url = '..';</script>
     <script src="../js/theme.js"></script>
+      <script src="../js/mathjax-config.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       <script src="../search/require.js"></script>
       <script src="../search/search.js"></script>
 
