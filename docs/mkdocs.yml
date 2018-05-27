@@ -4,7 +4,12 @@ pages:
   - Introduzione: index.md
   - Set-up: about.md
 
-theme: readthedocs
+theme: 
+  name: 'material'
+  favicon: 'img/favicon.ico'
+  language: 'it'
+
+site_favicon: docs/img/favicon.ico
 
 markdown_extensions:
   - pymdownx.arithmatex
