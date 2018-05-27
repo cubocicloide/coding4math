@@ -1,0 +1,16 @@
+site_name: Coding4Math
+
+pages:
+  - Introduzione: index.md
+  - Set-up: about.md
+
+theme: readthedocs
+
+markdown_extensions:
+  - pymdownx.arithmatex
+
+extra_javascript:
+  - js/mathjax-config.js
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+copyright: © Copyright 2018, Francesco Sasso.
