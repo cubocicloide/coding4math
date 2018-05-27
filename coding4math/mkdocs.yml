@@ -1,0 +1,7 @@
+site_name: Coding4Math
+
+pages:
+  - Home: index.md
+  - About: about.md
+
+theme: readthedocs
