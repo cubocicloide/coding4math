@@ -70,7 +70,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#discrete-kalman-filter" tabindex="1" class="md-skip">
+      <a href="#set-up" tabindex="1" class="md-skip">
         Vai al contenuto
       </a>
     
@@ -187,59 +187,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Set-up
-      </label>
-    
     <a href="./" title="Set-up" class="md-nav__link md-nav__link--active">
       Set-up
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Indice</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#requirements" title="Requirements" class="md-nav__link">
-    Requirements
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#compilation-instruction" title="Compilation instruction" class="md-nav__link">
-    Compilation instruction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run-the-program" title="Run the program" class="md-nav__link">
-    Run the program
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#further-informations" title="Further informations" class="md-nav__link">
-    Further informations
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -261,43 +211,6 @@
     
   
   
-    <label class="md-nav__title" for="toc">Indice</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#requirements" title="Requirements" class="md-nav__link">
-    Requirements
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#compilation-instruction" title="Compilation instruction" class="md-nav__link">
-    Compilation instruction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run-the-program" title="Run the program" class="md-nav__link">
-    Run the program
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#further-informations" title="Further informations" class="md-nav__link">
-    Further informations
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -309,53 +222,66 @@
               
                 
                 
-                <h1 id="discrete-kalman-filter">Discrete Kalman Filter</h1>
-<p>The project presented here consists in the implementation of a discrete Kalman filter, as done in this <a href="https://www.cs.utexas.edu/~teammco/misc/kalman_filter/">link</a>.</p>
-<hr />
-<h2 id="requirements">Requirements</h2>
-<p>This project has been tested in Ubuntu (version 14.04), and needs the following dependencies: <a href="https://www.cs.fsu.edu/~myers/howto/g++compiling.txt">g++</a>, <a href="http://eigen.tuxfamily.org/index.php?title=Main_Page">eigen3</a> and <a href="http://liballeg.org/index.html">allegro4</a>. In order to install these dependencies in an Ubuntu machine, run the following commands in a terminal window (in this case, the terminal is opened in the folder where the project is located, e.g., <code>project-directory</code>):</p>
-<pre><code class="zsh">➜  project-directory    sudo apt-get install g++
-➜  project-directory    sudo apt-get install libeigen3-dev
-➜  project-directory    sudo apt-get install liballegro4.2‐dev
-</code></pre>
+                <h1 id="set-up">Set-up</h1>
+<p>In questa sezione ci occuperemo di installare e mettere a punto le componenti necessarie per iniziare ad utilizzare il linguaggio Python.</p>
+<!-- ------
+## Requirements
 
-<hr />
-<h2 id="compilation-instruction">Compilation instruction</h2>
-<p>Once that the above dependencies has been installed, the program can be compiled by means of the <code>makefile</code>. More precisely, it will be sufficient to run the following command in the terminal:</p>
-<pre><code class="zsh">➜  project-directory    make
-</code></pre>
+This project has been tested in Ubuntu (version 14.04), and needs the following dependencies: [g++], [eigen3] and [allegro4]. In order to install these dependencies in an Ubuntu machine, run the following commands in a terminal window (in this case, the terminal is opened in the folder where the project is located, e.g., `project-directory`):
 
-<pre><code class="python">print('Hello World')
-</code></pre>
 
-<hr />
-<h2 id="run-the-program">Run the program</h2>
-<p>After the compilation, the <code>makefile</code> can be used to run the program, as follows:</p>
-<pre><code class="zsh">➜  project-directory    make run
-</code></pre>
+wzxhzdk:0
 
-<p><strong>Notes</strong></p>
-<ol>
-<li>
-<p>The program needs sudo privileges to be executed.</p>
-</li>
-<li>
-<p>The <code>makefile</code> can also be used to clean the program, in this case just run the command:</p>
-</li>
-</ol>
-<pre><code class="zsh">➜  project-directory    make clean
-</code></pre>
 
-<hr />
-<h2 id="further-informations">Further informations</h2>
-<p>For a detailed description of the project structure see the <a href="https://github.com/cubocicloide/kalman/blob/master/docs.pdf">docs</a>. 
+---
+## Compilation instruction
+Once that the above dependencies has been installed, the program can be compiled by means of the `makefile`. More precisely, it will be sufficient to run the following command in the terminal:
+
+
+wzxhzdk:1
+
+
+
+wzxhzdk:2
+
+
+---
+## Run the program
+After the compilation, the `makefile` can be used to run the program, as follows:
+
+
+wzxhzdk:3
+
+
+**Notes**
+
+1. The program needs sudo privileges to be executed.
+
+2. The `makefile` can also be used to clean the program, in this case just run the command:
+
+
+wzxhzdk:4
+
+
+---
+## Further informations
+For a detailed description of the project structure see the [docs]. 
 $$
 \begin{align}\tag{1}
 \label{eq:pythagoras}
 x^2 + y^2 = z^2
 \end{align} 
-$$</p>
-<p>As we can see from <span><span class="MathJax_Preview">\eqref{eq:pythagoras}</span><script type="math/tex">\eqref{eq:pythagoras}</script></span> all is well in Denmark. </p>
+$$
+
+As we can see from $\eqref{eq:pythagoras}$ all is well in Denmark. 
+
+
+
+[allegro4]: http://liballeg.org/index.html
+[docs]: https://github.com/cubocicloide/kalman/blob/master/docs.pdf
+[eigen3]: http://eigen.tuxfamily.org/index.php?title=Main_Page
+[g++]: https://www.cs.fsu.edu/~myers/howto/g++compiling.txt
+[link]: https://www.cs.utexas.edu/~teammco/misc/kalman_filter/ -->
                 
                   
                 
@@ -430,8 +356,6 @@ $$</p>
         
       
       <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
-      
-        <script src="../js/mathjax-config.js"></script>
       
         <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
