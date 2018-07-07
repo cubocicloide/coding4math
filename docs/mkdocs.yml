@@ -2,14 +2,14 @@ site_name: Coding4Math
 
 pages:
   - Introduzione: index.md
-  - Set-up: about.md
+  - Set-up: set-up.md
 
 theme: 
   name: 'material'
-  favicon: 'img/favicon.ico'
+  # favicon: 'img/favicon.ico'
   language: 'it'
 
-site_favicon: docs/img/favicon.ico
+# site_favicon: docs/img/favicon.ico
 
 markdown_extensions:
   - pymdownx.arithmatex
