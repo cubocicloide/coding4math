@@ -2,51 +2,46 @@
     "docs": [
         {
             "location": "/",
-            "text": "Coding4Math\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "text": "Coding4Math\n\n\nLa presente documentazione consiste in una guida introduttiva al linguaggio di programmazione Python. I codici relativi al progetto sono reperibili nel repository \ncubocicloide\n.\n\n\n\n\nPython\n\n\nPython \u00e8 un linguaggio di programmazione dinamico orientato agli oggetti utilizzabile per molti tipi di sviluppo software. Offre un forte supporto all'integrazione con altri linguaggi e programmi, \u00e8 fornito di una estesa libreria standard e pu\u00f2 essere imparato in pochi giorni. Non di meno, consente di implementare algoritmi scientifici per la risoluzione di svariati problemi pratici, quali ad esempio:\n\n\n\n\nRilevazione di guasti all'interno di una rete.\n\n\nControllo di traiettorie.\n\n\nRiconoscimento facciale.\n\n\nClassificazione di utenti.",
             "title": "Introduzione"
         },
         {
             "location": "/#coding4math",
-            "text": "For full documentation visit  mkdocs.org .",
+            "text": "La presente documentazione consiste in una guida introduttiva al linguaggio di programmazione Python. I codici relativi al progetto sono reperibili nel repository  cubocicloide .",
             "title": "Coding4Math"
         },
         {
-            "location": "/#commands",
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
-            "title": "Commands"
+            "location": "/#python",
+            "text": "Python \u00e8 un linguaggio di programmazione dinamico orientato agli oggetti utilizzabile per molti tipi di sviluppo software. Offre un forte supporto all'integrazione con altri linguaggi e programmi, \u00e8 fornito di una estesa libreria standard e pu\u00f2 essere imparato in pochi giorni. Non di meno, consente di implementare algoritmi scientifici per la risoluzione di svariati problemi pratici, quali ad esempio:   Rilevazione di guasti all'interno di una rete.  Controllo di traiettorie.  Riconoscimento facciale.  Classificazione di utenti.",
+            "title": "Python"
         },
         {
-            "location": "/#project-layout",
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Project layout"
-        },
-        {
-            "location": "/about/",
+            "location": "/set-up/",
             "text": "Discrete Kalman Filter\n\n\nThe project presented here consists in the implementation of a discrete Kalman filter, as done in this \nlink\n.\n\n\n\n\nRequirements\n\n\nThis project has been tested in Ubuntu (version 14.04), and needs the following dependencies: \ng++\n, \neigen3\n and \nallegro4\n. In order to install these dependencies in an Ubuntu machine, run the following commands in a terminal window (in this case, the terminal is opened in the folder where the project is located, e.g., \nproject-directory\n):\n\n\n\u279c  project-directory    sudo apt-get install g++\n\u279c  project-directory    sudo apt-get install libeigen3-dev\n\u279c  project-directory    sudo apt-get install liballegro4.2\u2010dev\n\n\n\n\n\n\nCompilation instruction\n\n\nOnce that the above dependencies has been installed, the program can be compiled by means of the \nmakefile\n. More precisely, it will be sufficient to run the following command in the terminal:\n\n\n\u279c  project-directory    make\n\n\n\n\nprint('Hello World')\n\n\n\n\n\n\nRun the program\n\n\nAfter the compilation, the \nmakefile\n can be used to run the program, as follows:\n\n\n\u279c  project-directory    make run\n\n\n\n\nNotes\n\n\n\n\n\n\nThe program needs sudo privileges to be executed.\n\n\n\n\n\n\nThe \nmakefile\n can also be used to clean the program, in this case just run the command:\n\n\n\n\n\n\n\u279c  project-directory    make clean\n\n\n\n\n\n\nFurther informations\n\n\nFor a detailed description of the project structure see the \ndocs\n. \n$$\n\\begin{align}\\tag{1}\n\\label{eq:pythagoras}\nx^2 + y^2 = z^2\n\\end{align} \n$$\n\n\nAs we can see from \n\\eqref{eq:pythagoras}\n\\eqref{eq:pythagoras}\n all is well in Denmark.",
             "title": "Set-up"
         },
         {
-            "location": "/about/#discrete-kalman-filter",
+            "location": "/set-up/#discrete-kalman-filter",
             "text": "The project presented here consists in the implementation of a discrete Kalman filter, as done in this  link .",
             "title": "Discrete Kalman Filter"
         },
         {
-            "location": "/about/#requirements",
+            "location": "/set-up/#requirements",
             "text": "This project has been tested in Ubuntu (version 14.04), and needs the following dependencies:  g++ ,  eigen3  and  allegro4 . In order to install these dependencies in an Ubuntu machine, run the following commands in a terminal window (in this case, the terminal is opened in the folder where the project is located, e.g.,  project-directory ):  \u279c  project-directory    sudo apt-get install g++\n\u279c  project-directory    sudo apt-get install libeigen3-dev\n\u279c  project-directory    sudo apt-get install liballegro4.2\u2010dev",
             "title": "Requirements"
         },
         {
-            "location": "/about/#compilation-instruction",
+            "location": "/set-up/#compilation-instruction",
             "text": "Once that the above dependencies has been installed, the program can be compiled by means of the  makefile . More precisely, it will be sufficient to run the following command in the terminal:  \u279c  project-directory    make  print('Hello World')",
             "title": "Compilation instruction"
         },
         {
-            "location": "/about/#run-the-program",
+            "location": "/set-up/#run-the-program",
             "text": "After the compilation, the  makefile  can be used to run the program, as follows:  \u279c  project-directory    make run  Notes    The program needs sudo privileges to be executed.    The  makefile  can also be used to clean the program, in this case just run the command:    \u279c  project-directory    make clean",
             "title": "Run the program"
         },
         {
-            "location": "/about/#further-informations",
+            "location": "/set-up/#further-informations",
             "text": "For a detailed description of the project structure see the  docs . \n$$\n\\begin{align}\\tag{1}\n\\label{eq:pythagoras}\nx^2 + y^2 = z^2\n\\end{align} \n$$  As we can see from  \\eqref{eq:pythagoras} \\eqref{eq:pythagoras}  all is well in Denmark.",
             "title": "Further informations"
         }

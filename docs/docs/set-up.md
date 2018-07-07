@@ -1,8 +1,8 @@
-# Discrete Kalman Filter
+# Set-up
 
-The project presented here consists in the implementation of a discrete Kalman filter, as done in this [link].
+In questa sezione ci occuperemo di installare e mettere a punto le componenti necessarie per iniziare ad utilizzare il linguaggio Python.
 
-------
+<!-- ------
 ## Requirements
 
 This project has been tested in Ubuntu (version 14.04), and needs the following dependencies: [g++], [eigen3] and [allegro4]. In order to install these dependencies in an Ubuntu machine, run the following commands in a terminal window (in this case, the terminal is opened in the folder where the project is located, e.g., `project-directory`):
@@ -61,4 +61,4 @@ As we can see from $\eqref{eq:pythagoras}$ all is well in Denmark.
 [docs]: https://github.com/cubocicloide/kalman/blob/master/docs.pdf
 [eigen3]: http://eigen.tuxfamily.org/index.php?title=Main_Page
 [g++]: https://www.cs.fsu.edu/~myers/howto/g++compiling.txt
-[link]: https://www.cs.utexas.edu/~teammco/misc/kalman_filter/
+[link]: https://www.cs.utexas.edu/~teammco/misc/kalman_filter/ -->
