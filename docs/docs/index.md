@@ -1,7 +1,7 @@
 # Introduzione
 
 <div style="text-align: justify;"> 
-La presente documentazione è una guida introduttiva al linguaggio di programmazione Python. I codici relativi al progetto sono reperibili nel repository <a href="https://github.com/cubocicloide/coding4math">coding4math</a>.
+La presente documentazione è una guida introduttiva al linguaggio di programmazione Python. I codici relativi a tale guida sono reperibili all'interno del repository <a href="https://github.com/cubocicloide/coding4math">coding4math</a>.
 </div>
 
 ------
@@ -24,13 +24,14 @@ Viste le notevoli premesse, vale la pena di iniziare a scandagliare Python, ed �
 ## Oracoli
 
 <div style="text-align: justify;">
-Prima di andare avanti, una doverosa premessa: il mondo informatico è una giungla in continuo e rapido cambiamento, la qual cosa rende pressochè impossibile la conoscenza di tutti i suoi meandri. Occorrono quindi degli oracoli che possano dare risposta ai nostri dilemmi, il primo dei quali è: chi sono questi oracoli? Ebbene, ne esistono di diversi, tuttavia i principali risultano essere:
+Prima di andare avanti, una doverosa premessa: il mondo informatico è una giungla in continuo e rapido mutamento, la qual cosa rende pressoché impossibile la conoscenza di tutti i suoi meandri. Occorrono quindi degli oracoli che possano dare risposta ai nostri dilemmi, il primo dei quali è: chi sono questi oracoli? Ebbene, ne esistono di diversi, tuttavia i principali risultano essere:
 <ul>
     <li><a href="https://www.google.com/">Google</a>: è il più celebre tra i motori di ricerca in Internet, al quale è possibile richiedere le più disparate informazioni che si possano immaginare.</li>
     <li><a href="https://stackexchange.com/">Stackexchange</a>: è una piattaforma informatica cui è possibile iscriversi per fare domande e rispondere a quesiti riguardanti diverse discipline, tra le quali: Matematica, Fisica e Chimica.</li>
-    <li><a href="https://stackoverflow.com/">Stackoverflow</a>: facente parte del gruppo Stackexchange, è una piattaforma di domande e risposte inerenti al solo settore Informatico.</li>
+    <li><a href="https://stackoverflow.com/">Stackoverflow</a>: facente parte del gruppo Stackexchange, è una piattaforma di domande e risposte inerenti al solo settore informatico.</li>
 </ul>
-Ebbene, tale premessa è d'obbligo in quanto molti di voi, nelle lezioni a seguire, potrebbero avere difficoltà nel comprendere alcuni passaggi o concetti; ciononostante, è bene sapere che i suddetti oracoli possono darvi una mano concreta nel risolvere i problemi che incontrerete lungo il tragitto. Il consiglio spassionato è quindi quello di consultarli ogni qualvolta vi troviate in una situazione di difficoltà di comprensione. Ovviamente, tale consiglio si estende ad altri corsi che seguirete nelle vostre vite.
+Ebbene, tale premessa è d'obbligo in quanto molti di voi, nelle lezioni a seguire, potrebbero avere difficoltà nel completare alcuni passaggi o nel comprendere alcuni concetti; ciononostante, è bene sapere che i suddetti oracoli possono darvi una mano concreta nel risolvere i problemi che incontrerete lungo il tragitto. Il consiglio spassionato è quindi quello di consultarli ogni qualvolta vi troviate in una situazione di difficoltà. Ovviamente, tale consiglio si estende ad altri percorsi formativi che seguirete nelle vostre vite.<br><br>
+PS: il modo migliore per consultare ciascuno degli oracoli sopra elencati, è quello di fare uso della lingua inglese; ciò richiede più impegno, ma il risultato finale sarà quasi certamente migliore.
 </div>
 
 
