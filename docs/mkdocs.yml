@@ -2,7 +2,8 @@ site_name: Coding4Math
 
 pages:
   - Introduzione: index.md
-  - Set-up: set-up.md
+  - Set-up (Mac OS High Sierra): set-up-mac.md
+  - Set-up (Windows 10): set-up-windows.md
 
 theme: 
   name: 'material'

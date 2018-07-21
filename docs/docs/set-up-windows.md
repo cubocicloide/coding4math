@@ -1,6 +1,8 @@
-# Set-up
+# Set-up (Windows 10)
 
-In questa sezione ci occuperemo di installare e mettere a punto le componenti necessarie per iniziare ad utilizzare il linguaggio Python.
+<div style="text-align: justify;">
+In questa sezione vedremo come installare Python 3 sul sistema operativo Windows 10. 
+</div>
 
 <!-- ------
 ## Requirements
