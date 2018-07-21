@@ -329,10 +329,10 @@ In questa sezione vedremo come installare Python 3 sul sistema operativo Mac OS 
 <hr />
 <h2 id="verificare-la-versione">Verificare la versione</h2>
 <div style="text-align: justify;">
-Anche se Python 2 è installato di default sui computer Apple, Python 3 non lo è. Potrete averne conferma eseguendo nel <a href="https://en.wikipedia.org/wiki/Terminal_(macOS)">Terminal</a> il seguente comando:
+Anche se Python 2 è installato di default sui computer Apple, Python 3 non lo è. Potrete averne conferma eseguendo nel <a href="https://en.wikipedia.org/wiki/Terminal_(macOS)">Terminal</a> il seguente comando<sup><a href="#fn0" id="ref0">1</a></sup>:
 </div>
 
-<pre><code class="zsh">➜  python --version
+<pre><code class="zsh">➜ ~  python --version
 Python 2.7.10
 </code></pre>
 
@@ -346,22 +346,22 @@ Per verificare se Python 3 è già installato, potete provare a eseguire <code>p
 Per installare Python 3 faremo uso del package manager Homebrew. Quest'ultimo dipende dal software <a href="https://en.wikipedia.org/wiki/Xcode">Xcode</a> distribuito gratuitamente da Apple. Abbiamo quindi bisogno di integrare Xcode nel nostro sistema, e possiamo farlo tramite la seguente istruzione da riga di comando:
 </div>
 
-<pre><code class="zsh">➜  xcode-select --install
+<pre><code class="zsh">➜ ~  xcode-select --install
 </code></pre>
 
 <div style="text-align: justify;">
-Durante il processo di installazione, accettare tutte le condizioni proposte<sup><a href="#fn1" id="ref1">1</a></sup>. 
-Il passo successivo consiste nell'installare Homebrew<sup><a href="#fn2" id="ref2">2</a></sup>:
+Durante il processo di installazione, accettare tutte le condizioni proposte<sup><a href="#fn1" id="ref1">2</a></sup>. 
+Il passo successivo consiste nell'installare Homebrew<sup><a href="#fn2" id="ref2">3</a></sup>:
 </div>
 
-<pre><code class="zsh">➜  /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+<pre><code class="zsh">➜ ~  /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
 </code></pre>
 
 <div style="text-align: justify;">
 Per verificare la corretta installazione di Homebrew, eseguire infine il comando seguente:
 </div>
 
-<pre><code class="zsh">➜  brew doctor
+<pre><code class="zsh">➜ ~  brew doctor
 Your system is ready to brew.
 </code></pre>
 
@@ -371,14 +371,14 @@ Your system is ready to brew.
 Per installare l'ultima versione di Python 3, dare la seguente istruzione:
 </div>
 
-<pre><code class="zsh">➜  brew install python3
+<pre><code class="zsh">➜ ~  brew install python3
 </code></pre>
 
 <div style="text-align: justify;">
 A questo punto, potete verificare quale versione di Python 3 è stata resa disponibile:
 </div>
 
-<pre><code class="zsh">➜  python3 --version
+<pre><code class="zsh">➜ ~  python3 --version
 Python 3.7.0
 </code></pre>
 
@@ -386,7 +386,7 @@ Python 3.7.0
 Per aprire la shell di Python 3 dalla linea di comando, basterà semplicemente scrivere <code>python3</code> e dare invio:
 </div>
 
-<pre><code class="zsh">➜  python3
+<pre><code class="zsh">➜ ~  python3
 Python 3.7.0 (default, Jun 29 2018, 20:13:13)
 [Clang 9.1.0 (clang-902.0.39.2)] on darwin
 Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
@@ -398,7 +398,7 @@ Per uscire dalla shell di Python 3, bisognerà dare il comando <code>exit()</cod
 Si potrà inoltre ancora sfruttare Python 2, che era installato di default, tramite l'istruzione <code>python</code>:
 </div>
 
-<pre><code class="zsh">➜  python
+<pre><code class="zsh">➜ ~  python
 Python 2.7.15 (default, Jun 17 2018, 12:46:58)
 [GCC 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.2)] on darwin
 Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
@@ -411,22 +411,22 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 È pratica comune utilizzare ambienti virtuali per qualsivoglia progetto Python. Un ambiente virtuale consente di creare uno spazio isolato di modo che si possa, ad esempio, utilizzare Python 2 e Python 3 per due diversi progetti ubicati nello stesso computer. È inoltre una buona norma quella di mantenere tutti i vostri ambienti virtuali in un'unica cartella, ad esempio nella cartella <code>virtualenv/</code> all'interno della home directory. Creiamo quindi tale cartella:
 </div>
 
-<pre><code class="zsh">➜  mkdir ~/virtualenvs
+<pre><code class="zsh">➜ ~  mkdir ~/virtualenvs
 </code></pre>
 
 <div style="text-align: justify;">
 Mediante l'ausilio del modulo <code>venv</code> incorporato in Python, possiamo inizializzare il nostro ambiente virtuale, che chiameremo <code>myvenv</code>:
 </div>
 
-<pre><code class="zsh">➜  python3 -m venv ~/virtualenvs/myvenv
+<pre><code class="zsh">➜ ~  python3 -m venv ~/virtualenvs/myvenv
 </code></pre>
 
 <div style="text-align: justify;">
 Avendo utilizzato il termine <code>python3</code>, il nostro ambiente virtuale riconosce che quando digitiamo <code>python</code> per assegnare un comando, intendiamo utilizzare Python 3, non Python 2. Per attivare l'ambiente virtuale appena inizializzato, sarà sufficiente eseguire:
 </div>
 
-<pre><code class="zsh">➜  source ~/virtualenvs/myvenv/bin/activate
-(myvenv) ➜
+<pre><code class="zsh">➜ ~  source ~/virtualenvs/myvenv/bin/activate
+(myvenv) ➜ ~
 </code></pre>
 
 <div style="text-align: justify;">
@@ -435,15 +435,16 @@ Val la pena notare che quando l'ambiente virtuale è attivo, sarà possibile ved
 Per disattivare l'ambiente virtuale in esecuzione, si può chiudere direttamente la finestra del Terminal, oppure si può dare la seguente istruzione: 
 </div>
 
-<pre><code class="zsh">(myvenv) ➜  deactivate
-➜
+<pre><code class="zsh">(myvenv) ➜ ~  deactivate
+➜ ~
 </code></pre>
 
 <div style="text-align: justify;">
-A questo punto, gli utenti Mac sono pronti a utilizzare il loro dispositivo per realizzare i loro progetti Python.
+A questo punto, gli utenti Mac sono pronti a utilizzare il proprio dispositivo per realizzare i loro progetti Python 3.
 <hr>
-<sup id="fn1">1. L'installazione di Xcode potrebbe richiedere da pochi minuti ad alcune ore.<a href="#ref1">↩</a></sup><br>
-<sup id="fn2">2. Il comando di installazione di Homebrew è reperibile anche presso il suo sito ufficiale.<a href="#ref2">↩</a></sup>
+<sup id="fn0">1. Si noti che i simboli <code>➜ ~</code> indicano che ci troviamo nella home directory del sistema operativo.<a href="#ref0">↩</a></sup><br>
+<sup id="fn1">2. La installazione di Xcode potrebbe richiedere da pochi minuti ad alcune ore.<a href="#ref1">↩</a></sup><br>
+<sup id="fn2">3. Il comando di installazione di Homebrew è reperibile anche presso il sito ufficiale di Homebrew.<a href="#ref2">↩</a></sup>
 </div>
                 
                   
