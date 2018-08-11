@@ -135,38 +135,38 @@ Nel seguente slider, viene sintetizzata la procedura per scrivere, tramite Subli
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="../img/sublime-1.png">
+      <img class="d-block w-100" src="../img/sublime-mac-1.png">
         <div class="carousel-caption d-none d-md-block">
             <h5>Step 1</h5>
-            <p>Aprire l'IDE Sublime Text e selezionare <code>File > Open...</code></p>
+            <p>Aprire l'IDE Sublime Text e selezionare <strong>File > Open...</strong></p>
         </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="../img/sublime-2.png">
+      <img class="d-block w-100" src="../img/sublime-mac-2.png">
         <div class="carousel-caption d-none d-md-block">
             <h5>Step 2</h5>
-            <p>Scegliere la cartella <code>~/virtualenvs/myvenv</code></p>
+            <p>Scegliere la cartella <strong>~/virtualenvs/myvenv</strong></p>
         </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="../img/sublime-4.png">
+      <img class="d-block w-100" src="../img/sublime-mac-3.png">
         <div class="carousel-caption d-none d-md-block">
             <h5>Step 3</h5>
-            <p>Selezionare <code>myvenv > New Folder</code> e aggiungere la cartella <code>src</code></p>
+            <p>Selezionare <strong>myvenv > New Folder</strong> e aggiungere la cartella <strong>src</strong></p>
         </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="../img/sublime-7.png">
+      <img class="d-block w-100" src="../img/sublime-mac-4.png">
         <div class="carousel-caption d-none d-md-block">
             <h5>Step 4</h5>
-            <p>Selezionare <code>src > New File</code> e aggiungere il file <code>main.py</code></p>
+            <p>Selezionare <strong>src > New File</strong> e aggiungere il file <strong>main.py</strong></p>
         </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="../img/sublime-8.png">
+      <img class="d-block w-100" src="../img/sublime-mac-5.png">
         <div class="carousel-caption d-none d-md-block">
             <h5>Step 5</h5>
-            <p>In <code>main.py</code> scrivere il codice <code>print('Hello World.')</code> e salvare</p>
+            <p>In <strong>main.py</strong> scrivere il codice <code>print('Hello World.')</code> e salvare</p>
         </div>
     </div>
   </div>
@@ -190,6 +190,7 @@ Hello World.
 ```
 <div style="text-align: justify;">
 Si noti che: col comando <code>source ~/virtualenvs/myvenv/bin/activate</code> si attiva l'ambiente virtuale; col comando <code>cd virtualenvs/myvenv/src</code> si entra nella cartella <code>src</code> dove è ubicato lo script <code>main.py</code>; infine col comando <code>python main.py</code> si esegue il predetto script che, come possiamo vedere, stampa sulla linea di comando il messaggio <code>Hello World.</code>.
+
 <hr>
 <sup id="fn0">1. Si noti che i simboli <code>➜ ~</code> indicano che ci troviamo nella home directory del sistema operativo.</sup><br>
 <sup id="fn1">2. La installazione di Xcode potrebbe richiedere da pochi minuti ad alcune ore.</sup><br>
