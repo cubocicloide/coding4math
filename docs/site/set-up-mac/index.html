@@ -270,6 +270,18 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../sintassi-di-base/" title="Sintassi di base" class="md-nav__link">
+      Sintassi di base
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -360,7 +372,7 @@ In questa sezione vedremo come installare Python 3 sul sistema operativo Mac OS 
 Anche se Python 2 è installato di default sui computer Apple, Python 3 non lo è. Potrete averne conferma eseguendo nel <a href="https://en.wikipedia.org/wiki/Terminal_(macOS)">Terminal</a> il seguente comando<sup><a href="#fn0" id="ref0">1</a></sup>:
 </div>
 
-<pre><code class="zsh">➜ ~  python --version
+<pre><code class="zsh">~ &gt; python --version
 Python 2.7.10
 </code></pre>
 
@@ -374,7 +386,7 @@ Per verificare se Python 3 è già installato, potete provare a eseguire <code>p
 Per installare Python 3 faremo uso del package manager <a href="https://brew.sh/">Homebrew</a>. Quest'ultimo dipende dal software <a href="https://en.wikipedia.org/wiki/Xcode">Xcode</a> distribuito gratuitamente da Apple. Abbiamo quindi bisogno di integrare Xcode nel nostro sistema, e possiamo farlo tramite la seguente istruzione da riga di comando:
 </div>
 
-<pre><code class="zsh">➜ ~  xcode-select --install
+<pre><code class="zsh">~ &gt; xcode-select --install
 </code></pre>
 
 <div style="text-align: justify;">
@@ -382,14 +394,14 @@ Durante il processo di installazione, accettare tutte le condizioni proposte<sup
 Il passo successivo consiste nell'installare Homebrew<sup><a href="#fn2" id="ref2">3</a></sup>:
 </div>
 
-<pre><code class="zsh">➜ ~  /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+<pre><code class="zsh">~ &gt; /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
 </code></pre>
 
 <div style="text-align: justify;">
 Per verificare la corretta installazione di Homebrew, eseguire infine il comando seguente:
 </div>
 
-<pre><code class="zsh">➜ ~  brew doctor
+<pre><code class="zsh">~ &gt; brew doctor
 Your system is ready to brew.
 </code></pre>
 
@@ -399,14 +411,14 @@ Your system is ready to brew.
 Per installare l'ultima versione di Python 3, dare la seguente istruzione:
 </div>
 
-<pre><code class="zsh">➜ ~  brew install python3
+<pre><code class="zsh">~ &gt; brew install python3
 </code></pre>
 
 <div style="text-align: justify;">
 A questo punto, potete verificare quale versione di Python 3 è stata resa disponibile:
 </div>
 
-<pre><code class="zsh">➜ ~  python3 --version
+<pre><code class="zsh">~ &gt; python3 --version
 Python 3.7.0
 </code></pre>
 
@@ -414,7 +426,7 @@ Python 3.7.0
 Per aprire la shell di Python 3 dalla linea di comando, basterà semplicemente scrivere <code>python3</code> e dare invio:
 </div>
 
-<pre><code class="zsh">➜ ~  python3
+<pre><code class="zsh">~ &gt; python3
 Python 3.7.0 (default, Jun 29 2018, 20:13:13)
 [Clang 9.1.0 (clang-902.0.39.2)] on darwin
 Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
@@ -426,7 +438,7 @@ Per uscire dalla shell di Python 3, bisognerà dare il comando <code>exit()</cod
 Si potrà inoltre ancora sfruttare Python 2, che era installato di default, tramite l'istruzione <code>python</code>:
 </div>
 
-<pre><code class="zsh">➜ ~  python
+<pre><code class="zsh">~ &gt; python
 Python 2.7.15 (default, Jun 17 2018, 12:46:58)
 [GCC 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.2)] on darwin
 Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
@@ -439,22 +451,22 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 È pratica comune utilizzare ambienti virtuali per qualsivoglia progetto Python. Un ambiente virtuale consente di creare uno spazio isolato di modo che si possa, ad esempio, utilizzare Python 2 e Python 3 per due diversi progetti ubicati nello stesso computer. È inoltre una buona norma quella di mantenere tutti i vostri ambienti virtuali in un'unica cartella, ad esempio nella cartella <code>virtualenv/</code> all'interno della home directory. Creiamo quindi tale cartella:
 </div>
 
-<pre><code class="zsh">➜ ~  mkdir ~/virtualenvs
+<pre><code class="zsh">~ &gt; mkdir ~/virtualenvs
 </code></pre>
 
 <div style="text-align: justify;">
 Mediante l'ausilio del modulo <code>venv</code> incorporato in Python, possiamo inizializzare il nostro ambiente virtuale, che chiameremo <code>myvenv</code>:
 </div>
 
-<pre><code class="zsh">➜ ~  python3 -m venv ~/virtualenvs/myvenv
+<pre><code class="zsh">~ &gt; python3 -m venv ~/virtualenvs/myvenv
 </code></pre>
 
 <div style="text-align: justify;">
 Avendo utilizzato il termine <code>python3</code>, il nostro ambiente virtuale riconosce che quando digitiamo <code>python</code> per assegnare un comando, intendiamo utilizzare Python 3, non Python 2. Per attivare l'ambiente virtuale appena inizializzato, sarà sufficiente eseguire:
 </div>
 
-<pre><code class="zsh">➜ ~  source ~/virtualenvs/myvenv/bin/activate
-(myvenv) ➜ ~
+<pre><code class="zsh">~ &gt; source ~/virtualenvs/myvenv/bin/activate
+(myvenv) ~ &gt;
 </code></pre>
 
 <div style="text-align: justify;">
@@ -463,7 +475,7 @@ Val la pena notare che quando l'ambiente virtuale è attivo, sarà possibile ved
 Per disattivare l'ambiente virtuale in esecuzione, si può chiudere direttamente la finestra del Terminal, oppure si può dare la seguente istruzione: 
 </div>
 
-<pre><code class="zsh">(myvenv) ➜ ~  deactivate
+<pre><code class="zsh">(myvenv) ~ &gt; deactivate
 ➜ ~
 </code></pre>
 
@@ -536,9 +548,9 @@ Nel seguente slider, viene sintetizzata la procedura per scrivere, tramite Subli
 Adesso che abbiamo a nostra disposizione il nostro primo script Python, potremo infine eseguirlo tramite la seguente successione di comandi:
 </div>
 
-<pre><code class="zsh">➜ ~  source ~/virtualenvs/myvenv/bin/activate
-(myvenv) ➜ ~  cd virtualenvs/myvenv/src
-(myvenv) ➜ src  python main.py
+<pre><code class="zsh">~ &gt; source ~/virtualenvs/myvenv/bin/activate
+(myvenv) ~ &gt; cd virtualenvs/myvenv/src
+(myvenv) src &gt; python main.py
 Hello World.
 </code></pre>
 
@@ -546,7 +558,7 @@ Hello World.
 Si noti che: col comando <code>source ~/virtualenvs/myvenv/bin/activate</code> si attiva l'ambiente virtuale; col comando <code>cd virtualenvs/myvenv/src</code> si entra nella cartella <code>src</code> dove è ubicato lo script <code>main.py</code>; infine col comando <code>python main.py</code> si esegue il predetto script che, come possiamo vedere, stampa sulla linea di comando il messaggio <code>Hello World.</code>.
 
 <hr>
-<sup id="fn0">1. Si noti che i simboli <code>➜ ~</code> indicano che ci troviamo nella home directory del sistema operativo.</sup><br>
+<sup id="fn0">1. Si noti che il simbolo <code>~</code> indica la home directory del sistema operativo, solitamente ubicata nel path <code>/Users/nomeutente</code>. Inoltre la dicitura <code>cartella ></code> indica che ci troviamo nella directory <code>cartella</code> del sistema operativo.</sup><br>
 <sup id="fn1">2. La installazione di Xcode potrebbe richiedere da pochi minuti ad alcune ore.</sup><br>
 <sup id="fn2">3. Il comando di installazione di Homebrew è reperibile anche presso il sito ufficiale di Homebrew.</sup>
 </div>

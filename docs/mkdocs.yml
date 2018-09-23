@@ -4,6 +4,10 @@ pages:
   - Introduzione: index.md
   - Set-up (Mac OS High Sierra): set-up-mac.md
   - Set-up (Windows 10): set-up-windows.md
+  # - Set-up (Windows 10): set-up-windows-10.md
+  - Sintassi di base: sintassi-di-base.md
+  - Variabili: variabili.md
+  - Operatori: operatori.md
 
 theme: 
   name: 'material'
