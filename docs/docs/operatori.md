@@ -53,9 +53,9 @@ Gli operatori di assegnazione permettono non solo di attribuire dei valori, ma a
 | <code>-=</code> | Sottrae l'operando di destra a quello di sinistra e assegna il risultato a quest'ultimo. | <code>z -= x</code> equivale a <code>z = z - x</code> |
 | <code>*=</code> | Moltiplica l'operando di destra per quello di sinistra e assegna il risultato a quest'ultimo. | <code>z *= x</code> equivale a <code>z = z * x</code> |
 | <code>/=</code> | Divide l'operando di sinistra per il valore di quello di destra e assegna il risultato al primo operando. | <code>z /= x</code> equivale a <code>z = z / x</code> |
-| <code>%=</code> | Calcola il resto dei due operatori e assegna il risultato all'operando di sinistra. | <code>z %= x</code> equivale a <code>z = z % x</code> |
-| <code>**=</code> | Calcola un'elevazione a potenza e assegna il risultato all'operatorendo di sinistra. | <code>z \*\*= x</code> equivale a <code>z = z ** x</code> |
-| <code>//=</code> | Restituisce l'arrotondamento di una divisione tra gli operatori e assegna il risultato all'operatorendo di sinistra. | <code>z //= x</code> equivale a <code>z = z // x</code> |
+| <code>%=</code> | Calcola il resto dei due operandi e assegna il risultato all'operando di sinistra. | <code>z %= x</code> equivale a <code>z = z % x</code> |
+| <code>**=</code> | Calcola un'elevazione a potenza e assegna il risultato all'operando di sinistra. | <code>z \*\*= x</code> equivale a <code>z = z ** x</code> |
+| <code>//=</code> | Restituisce l'arrotondamento di una divisione tra gli operandi e assegna il risultato all'operando di sinistra. | <code>z //= x</code> equivale a <code>z = z // x</code> |
 
 
 ------
@@ -67,8 +67,8 @@ Gli operatori logici sono dei costrutti sintattici utili al fine di legare due o
 
 | **Op.** | **Descrizione** | **Esempio** |
 | -- | -- | -- |
-| <code>and</code> | Restituisce <code>True</code> se entrambi gli operatori sono <code>True</code>, altrimenti restituisce <code>False</code>. | <code>x and y</code> restituisce <code>False</code> |
-| <code>or</code> | Restituisce <code>True</code> se almeno uno dei due operatori è <code>True</code>, altrimenti restituisce <code>False</code>. | <code>x or y</code> restituisce <code>True</code> |
+| <code>and</code> | Restituisce <code>True</code> se entrambi gli operandi sono <code>True</code>, altrimenti restituisce <code>False</code>. | <code>x and y</code> restituisce <code>False</code> |
+| <code>or</code> | Restituisce <code>True</code> se almeno uno dei due operandi è <code>True</code>, altrimenti restituisce <code>False</code>. | <code>x or y</code> restituisce <code>True</code> |
 | <code>not</code> | Restituisce <code>True</code> se l'operando è <code>False</code>, altrimenti restituisce <code>True</code>. | <code>not y</code> restituisce <code>True</code> |
 
 

@@ -1,0 +1,692 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copia">
+      
+        <meta name="lang:clipboard.copied" content="Copiato">
+      
+        <meta name="lang:search.language" content="it">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Nessun documento trovato">
+      
+        <meta name="lang:search.result.one" content="1 documento trovato">
+      
+        <meta name="lang:search.result.other" content="# documenti trovati">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
+    
+    
+      
+        <title>Sintassi di base - Coding4Math</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.8d40d89b.css">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#sintassi-di-base" tabindex="1" class="md-skip">
+        Vai al contenuto
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Coding4Math" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Coding4Math
+              </span>
+              <span class="md-header-nav__topic">
+                Sintassi di base
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Scrivi per iniziare a cercare
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Coding4Math
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Introduzione" class="md-nav__link">
+      Introduzione
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../set-up-mac/" title="Set-up (Mac OS High Sierra)" class="md-nav__link">
+      Set-up (Mac OS High Sierra)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../set-up-windows/" title="Set-up (Windows 10)" class="md-nav__link">
+      Set-up (Windows 10)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Sintassi di base
+      </label>
+    
+    <a href="./" title="Sintassi di base" class="md-nav__link md-nav__link--active">
+      Sintassi di base
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Indice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#identificatori" title="Identificatori" class="md-nav__link">
+    Identificatori
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parole-chiave" title="Parole chiave" class="md-nav__link">
+    Parole chiave
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indentazione-del-codice" title="Indentazione del codice" class="md-nav__link">
+    Indentazione del codice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#istruzioni-multi-linea" title="Istruzioni multi-linea" class="md-nav__link">
+    Istruzioni multi-linea
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virgolette" title="Virgolette" class="md-nav__link">
+    Virgolette
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commenti" title="Commenti" class="md-nav__link">
+    Commenti
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../variabili/" title="Variabili" class="md-nav__link">
+      Variabili
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../operatori/" title="Operatori" class="md-nav__link">
+      Operatori
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Indice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#identificatori" title="Identificatori" class="md-nav__link">
+    Identificatori
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parole-chiave" title="Parole chiave" class="md-nav__link">
+    Parole chiave
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indentazione-del-codice" title="Indentazione del codice" class="md-nav__link">
+    Indentazione del codice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#istruzioni-multi-linea" title="Istruzioni multi-linea" class="md-nav__link">
+    Istruzioni multi-linea
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virgolette" title="Virgolette" class="md-nav__link">
+    Virgolette
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commenti" title="Commenti" class="md-nav__link">
+    Commenti
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="sintassi-di-base">Sintassi di base</h1>
+<p>In questa sezione forniremo alcune regole sintattiche di base del linguaggio Python, le quali ci serviranno per scrivere in modo corretto il nostro codice.</p>
+<hr />
+<h2 id="identificatori">Identificatori</h2>
+<div style="text-align: justify;">
+Un identificatore è il nome con cui sono rappresentate costanti, variabili, metodi, classi e moduli. Un identificatore può essere costituito da una lettera maiuscola, minuscola o dal simbolo underscore seguito da altri caratteri, che a loro volta possono essere una qualsiasi combinazione di lettere maiuscole e minuscole, underscore e cifre. I caratteri minuscoli corrispondono alle lettere minuscole dell’alfabeto dalla a alla z, compreso il simbolo underscore, mentre i caratteri maiuscoli corrispondono alle lettere maiuscole dell’alfabeto dalla A alla Z e le cifre da 0 al 9. Il numero di caratteri che compongono il nome non è limitato.<br>
+&nbsp Gli identificatori non possono contenere spazi vuoti o caratteri di punteggiatura, quali ad esempio @, $ e %. Python è un linguaggio <i>case sensitive</i>, ciò vuol dire che <code>var</code> e <code>Var</code> sono due identificatori diversi. Vi sono inoltre alcune convenzioni di denominazione che vengono seguite all'interno della comunità di programmatori Python:
+<ul>
+<li>gli identificatori delle classi cominciano con una lettera maiuscola, mentre gli altri identificatori cominciano con una lettera maiuscola;</li>
+<li>se un identificatore si compone di più parole, queste vengono separate da un underscore (es. <code>var_1</code>).</li>
+</ul>
+Inoltre, l'utilizzo degli underscore all'inizio o alla fine di un identificatore, è soggetto ad alcune convenzioni e regole che sono esposte nella tabella seguente.<br>
+</div>
+
+<table>
+<thead>
+<tr>
+<th><strong>Tipo</strong></th>
+<th><strong>Esempio</strong></th>
+<th><strong>Significato</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Single leading underscore</strong></td>
+<td>_var</td>
+<td>Convenzione indicante che l'identificatore è destinato ad essere privato.</td>
+</tr>
+<tr>
+<td><strong>Single trailing underscore</strong></td>
+<td>var_</td>
+<td>Convenzione utilizzata per evitare conflitti con le parole chiave di Python.</td>
+</tr>
+<tr>
+<td><strong>Double leading underscore</strong></td>
+<td>__var</td>
+<td>Utilizzata all'interno delle classi per innescare il cosiddetto <i>name mangling</i>.</td>
+</tr>
+<tr>
+<td><strong>Double leading and trailing underscore</strong></td>
+<td>__var__</td>
+<td>Usato come identificatore di metodi speciali definiti dal linguaggio Python. Questo tipo di identificatore non va usato per rappresentare le vostre variabili.</td>
+</tr>
+<tr>
+<td><strong>Single underscore</strong></td>
+<td>_</td>
+<td>Talvolta usato come identificatore per variabili temporanee o insignificanti</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="parole-chiave">Parole chiave</h2>
+<div style="text-align: justify;">
+La lista seguente mostra le parole chiave di Python. Queste sono parole riservate che non possono essere usate come identificatori. Tutte le parole chiave di Python contengono solo lettere minuscole.<br>
+</div>
+
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"><strong>Parole chiave</strong></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">and</td>
+<td align="center">assert</td>
+<td align="center">break</td>
+<td align="center">class</td>
+<td align="center">continue</td>
+</tr>
+<tr>
+<td align="center">def</td>
+<td align="center">del</td>
+<td align="center">elif</td>
+<td align="center">else</td>
+<td align="center">except</td>
+</tr>
+<tr>
+<td align="center">exec</td>
+<td align="center">finally</td>
+<td align="center">for</td>
+<td align="center">from</td>
+<td align="center">global</td>
+</tr>
+<tr>
+<td align="center">if</td>
+<td align="center">import</td>
+<td align="center">in</td>
+<td align="center">is</td>
+<td align="center">lambda</td>
+</tr>
+<tr>
+<td align="center">not</td>
+<td align="center">or</td>
+<td align="center">pass</td>
+<td align="center">print</td>
+<td align="center">raise</td>
+</tr>
+<tr>
+<td align="center">return</td>
+<td align="center">try</td>
+<td align="center">while</td>
+<td align="center">with</td>
+<td align="center">yield</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="indentazione-del-codice">Indentazione del codice</h2>
+<div style="text-align: justify;">
+Una caratteristica essenziale del linguaggio di programmazione Python è il metodo che utilizza per delimitare i blocchi di programma, e cioè l’indentazione del codice. Per indentazione del codice, si intende quella tecnica utilizzata nella programmazione attraverso la quale si evidenziano dei blocchi di programma con l’inserimento di una certa quantità di spazio vuoto all’inizio di una riga di testo, allo scopo di aumentarne la leggibilità. Così ogni riga viene indentata di un certo numero di spazi che dipende dalla sua posizione all’interno della struttura logica del programma. L'indentazione inizia un blocco e la rimozione dell'indentazione lo termina. Un esempio schematico di indentazione è fornito dalla figura seguente, nella quale è possibile riconoscere i diversi blocchi di codice sulla base del loro livello di indentazione.<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/blocchi.svg" style="width: 200px;"><br><br>
+
+Dunque Python, invece di usare parentesi o parole chiave, usa l’indentazione stessa per indicare i blocchi nidificati; a tal proposito si possono usare sia una tabulazione, sia un numero arbitrario di spazi bianchi, ma lo standard Python prevede 4 spazi bianchi. Nella fattispecie, si aggiungono 4 nuovi spazi se si vuole incominciare un nuovo blocco, e si rimuovono 4 spazi se si vuole terminare un blocco esistente.<br>
+&nbsp; La cosa da ricordare è che l'indentazione in Python non è facoltativa ma è una regola, nel senso che se si omette l’indentazione  allora l’interprete ci restituirà un messaggio di errore. A titolo di esempio, si consideri il seguente codice, correttamente indentato, che rappresenta una classica struttura condizionale:
+</div>
+
+<pre><code class="python">if True:
+    print('True')
+else:
+    print('False')
+</code></pre>
+
+<div style="text-align: justify;">
+Ebbene, se proviamo a eliminare l'indentazione dal suddetto codice, ovvero se scriviamo:
+</div>
+
+<pre><code class="python">if True:
+print('True')
+else:
+print('False')
+</code></pre>
+
+<div style="text-align: justify;">
+allora l'interprete Python restituirà il messaggio di errore: 
+</div>
+
+<pre><code class="python">IndentationError: expected an indented block
+</code></pre>
+
+<hr />
+<h2 id="istruzioni-multi-linea">Istruzioni multi-linea</h2>
+<div style="text-align: justify;">
+Le istruzioni in Python tipicamente terminano con l'andata a capo. Tuttavia, è consentito l'uso del carattere di continuazione (<code>\</code>) per indicare che l'istruzione continua alla linea successiva. Ad esempio:
+</div>
+
+<pre><code class="python">total = item_one + \
+        item_two + \
+        item_three
+</code></pre>
+
+<div style="text-align: justify;">
+Le istruzioni contenute all'interno delle parentesi <code>()</code>, <code>[]</code> o <code>{}</code> non necessitano dell'utilizzo del carattere di continuazione. Ad esempio:
+</div>
+
+<pre><code class="python">days = ['Monday', 'Tuesday', 'Wednesday',
+        'Thursday', 'Friday']
+</code></pre>
+
+<hr />
+<h2 id="virgolette">Virgolette</h2>
+<div style="text-align: justify;">
+Python accetta singole (<code>'</code>), doppie (<code>"</code>) e triple (<code>'''</code> o <code>"""</code>) virgolette per indicare i valori letterali di una stringa, purché lo stesso tipo di virgolette inizi e termini la stringa.<br>
+&nbsp; Le triple virgolette sono usate per estendere il contenuto della stringa su più righe. Ad esempio, tutte le seguenti istruzioni sono consentite:
+</div>
+
+<pre><code class="python">parola = 'parola'
+frase = &quot;Questa è una frase.&quot;
+paragrafo = &quot;&quot;&quot;Questo è un paragrafo. Esso si
+               compone di più righe e frasi.&quot;&quot;&quot;
+</code></pre>
+
+<hr />
+<h2 id="commenti">Commenti</h2>
+<div style="text-align: justify;">
+Il cancelletto (<code>#</code>), quando non si trova all'interno di una stringa letterale, definisce l'inizio un commento. Tutti i caratteri dopo il simbolo <code>#</code>, e fino alla fine della riga, faranno parte del commento e l'interprete Python li ignorerà. Si consideri ad esempio lo script:
+</div>
+
+<pre><code class="python"># Primo commento
+print('Hello, Python!') # secondo commento
+</code></pre>
+
+<p>Tale script, quando eseguito, produrrà il risultato seguente:</p>
+<pre><code class="python">Hello, Python!
+</code></pre>
+
+<div style="text-align: justify;">
+I commenti che si estendono su più righe saranno invece delimitati dalle triple virgolette <code>"""</code>:
+</div>
+
+<pre><code class="python">&quot;&quot;&quot;
+Questo è un commento che si dilunga
+su più righe.
+&quot;&quot;&quot;
+print('Hello, Python!')
+</code></pre>
+
+<p><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></p>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../set-up-windows/" title="Set-up (Windows 10)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Precedente
+                </span>
+                Set-up (Windows 10)
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../variabili/" title="Variabili" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Prossimo
+                </span>
+                Variabili
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © Copyright 2018, Francesco Sasso.
+          </div>
+        
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.b438e6c5.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.it.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
