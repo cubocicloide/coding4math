@@ -81,7 +81,7 @@ Gli operatori di membership potranno essere utilizzati per verificare se un dete
 
 | **Op.** | **Descrizione** | **Esempio** |
 | -- | -- | -- |
-| <code>in</code> | Restituisce <code>True</code> se un valore è presente all'interno di un insieme, altrimenti restituisce <code>False</code>. | <code>y and x</code> restituisce <code>True</code> |
+| <code>in</code> | Restituisce <code>True</code> se un valore è presente all'interno di un insieme, altrimenti restituisce <code>False</code>. | <code>y in x</code> restituisce <code>True</code> |
 | <code>not in</code> | Restituisce <code>True</code> se un valore non è presente all'interno di un insieme, altrimenti restituisce <code>False</code>. | <code>y not in x</code> restituisce <code>False</code> |
 
 
