@@ -84,6 +84,7 @@ Gli operatori di membership potranno essere utilizzati per verificare se un dete
 | <code>in</code> | Restituisce <code>True</code> se un valore è presente all'interno di un insieme, altrimenti restituisce <code>False</code>. | <code>y in x</code> restituisce <code>True</code> |
 | <code>not in</code> | Restituisce <code>True</code> se un valore non è presente all'interno di un insieme, altrimenti restituisce <code>False</code>. | <code>y not in x</code> restituisce <code>False</code> |
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <!-- 
 ---
