@@ -15,7 +15,7 @@ La seguente shell interattiva consente, a chi non fosse stato in grado di metter
 </div>
 
 
----
+<!-- ---
 
 <div data-datacamp-exercise data-lang="python" data-height="570px" >
     <code data-type="sample-code" >
@@ -61,11 +61,7 @@ else:
 
 
     </code>
-</div>
-
-
-
-
+</div> -->
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
