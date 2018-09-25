@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2018-09-24</lastmod>
+     <lastmod>2018-09-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>/set-up-mac/</loc>
-     <lastmod>2018-09-24</lastmod>
+     <lastmod>2018-09-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,7 +20,15 @@
     
     <url>
      <loc>/set-up-windows/</loc>
-     <lastmod>2018-09-24</lastmod>
+     <lastmod>2018-09-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/shell-interattiva/</loc>
+     <lastmod>2018-09-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -28,7 +36,7 @@
     
     <url>
      <loc>/sintassi-di-base/</loc>
-     <lastmod>2018-09-24</lastmod>
+     <lastmod>2018-09-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -36,7 +44,7 @@
     
     <url>
      <loc>/variabili/</loc>
-     <lastmod>2018-09-24</lastmod>
+     <lastmod>2018-09-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -44,7 +52,7 @@
     
     <url>
      <loc>/operatori/</loc>
-     <lastmod>2018-09-24</lastmod>
+     <lastmod>2018-09-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
