@@ -5,6 +5,7 @@ pages:
   - Set-up (Mac OS High Sierra): set-up-mac.md
   - Set-up (Windows 10): set-up-windows.md
   # - Set-up (Windows 10): set-up-windows-10.md
+  - Shell interattiva: shell-interattiva.md
   - Sintassi di base: sintassi-di-base.md
   - Variabili: variabili.md
   - Operatori: operatori.md
@@ -15,6 +16,8 @@ theme:
   language: 'it'
 
 # site_favicon: docs/img/favicon.ico
+
+plugins: []
 
 markdown_extensions:
   - pymdownx.arithmatex
