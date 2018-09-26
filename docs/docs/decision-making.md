@@ -61,7 +61,7 @@ else:
 ```
 
 <div style="text-align: justify;">
-Ebbene, l'<code>if...else</code> statement valuta la <code>condizione</code> ed esegue il <code>blocco dell'if</code> solo se la <code>condizione</code> è <code>True</code>. Se invece la <code>condizione</code> è <code>False</code>, viene invece eseguito il <code>blocco dell'else</code>. Anche in tal caso l'indentazione è usata per separare i due blocchi. Detto questo, riportiamo di seguito il diagramma di flusso dell'<code>if...else</code> statement, che sintetizza quanto detto in precedenza.<br>
+Ebbene, l'<code>if...else</code> statement valuta la <code>condizione</code> ed esegue il <code>blocco dell'if</code> solo se la <code>condizione</code> è <code>True</code>. Se invece la <code>condizione</code> è <code>False</code>, viene eseguito il <code>blocco dell'else</code>. Anche in tal caso l'indentazione è usata per separare i due blocchi. Detto questo, riportiamo di seguito il diagramma di flusso dell'<code>if...else</code> statement, che sintetizza quanto detto in precedenza.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/if-else.svg" style="width: 330px;"><br>
 Concludiamo questa sottosezione dedicata all'<code>if...else</code> statement con un semplice esempio:
 </div>
