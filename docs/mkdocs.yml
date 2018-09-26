@@ -9,6 +9,7 @@ pages:
   - Sintassi di base: sintassi-di-base.md
   - Variabili: variabili.md
   - Operatori: operatori.md
+  - Costrutti condizionali: decision-making.md
 
 theme: 
   name: 'material'
