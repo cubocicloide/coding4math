@@ -39,21 +39,47 @@ La lista seguente mostra le parole chiave di Python. Queste sono parole riservat
 | return | try | while | with | yield |
 
 ---
+## Blocchi di codice
+
+<div style="text-align: justify;">
+Ogni programma Python si compone dei seguenti tipi di blocchi di codice:
+<ul>
+    <li>
+    <code>main</code>: si tratta del blocco principale, che include tutti gli altri, e che pertanto comincia all'inizio del programma e termina alla fine dello stesso;
+    </li>
+    <li>
+    <code>if...elif...else</code>: tali blocchi definiscono i costrutti condizionali del programma;
+    </li>
+    <li>
+    <code>for</code> e <code>while</code>: sono i blocchi che definiscono i cicli iterativi del programma;
+    </li>
+    <li>
+    <code>def function</code> e <code>def Class</code>: si tratta dei blocchi che introducono le funzioni e le classi del programma;
+    </li>
+    <li>
+    <code>try...except...else</code>: sono blocchi impiegati nella gestione delle eccezioni e degli errori del programma.
+    </li>
+</ul>
+Nelle prossime sezioni esamineremo più nel dettaglio tutti gli elementi della suddetta lista.
+</div>
+
+
+---
 ## Indentazione del codice
 
 <div style="text-align: justify;">
-Una caratteristica essenziale del linguaggio di programmazione Python è il metodo che utilizza per delimitare i blocchi di programma, e cioè l’indentazione del codice. Per indentazione del codice, si intende quella tecnica utilizzata nella programmazione attraverso la quale si evidenziano dei blocchi di programma con l’inserimento di una certa quantità di spazio vuoto all’inizio di una riga di testo, allo scopo di aumentarne la leggibilità. Così ogni riga viene indentata di un certo numero di spazi che dipende dalla sua posizione all’interno della struttura logica del programma. L'indentazione inizia un blocco e la rimozione dell'indentazione lo termina. Un esempio schematico di indentazione è fornito dalla figura seguente, nella quale è possibile riconoscere i diversi blocchi di codice sulla base del loro livello di indentazione.<br><br>
+Una caratteristica essenziale del linguaggio di programmazione Python è il metodo che utilizza per delimitare i blocchi di codice, e cioè l’indentazione. Per indentazione del codice, si intende quella tecnica utilizzata nella programmazione attraverso la quale si evidenziano dei blocchi di programma con l’inserimento di una certa quantità di spazio vuoto all’inizio di una riga di testo, allo scopo di aumentarne la leggibilità. Così ogni riga viene indentata di un certo numero di spazi che dipende dalla sua posizione all’interno della struttura logica del programma. L'indentazione inizia un blocco e la rimozione dell'indentazione lo termina. Un esempio schematico di indentazione è fornito dalla figura seguente, nella quale è possibile riconoscere i diversi blocchi di codice sulla base del loro livello di indentazione. Si noti in particolare che il blocco <code>main</code>, definito in tal caso come <strong>Blocco 1</strong>, è l'unico non indentato, così come deve essere. <br><br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/blocchi.svg" style="width: 200px;"><br><br>
 
 Dunque Python, invece di usare parentesi o parole chiave, usa l’indentazione stessa per indicare i blocchi nidificati; a tal proposito si possono usare sia una tabulazione, sia un numero arbitrario di spazi bianchi, ma lo standard Python prevede 4 spazi bianchi. Nella fattispecie, si aggiungono 4 nuovi spazi se si vuole incominciare un nuovo blocco, e si rimuovono 4 spazi se si vuole terminare un blocco esistente.<br>
-&nbsp; La cosa da ricordare è che l'indentazione in Python non è facoltativa ma è una regola, nel senso che se si omette l’indentazione  allora l’interprete ci restituirà un messaggio di errore. A titolo di esempio, si consideri il seguente codice, correttamente indentato, che rappresenta una classica struttura condizionale:
+&nbsp; La cosa da ricordare è che l'indentazione in Python non è facoltativa ma è una regola, nel senso che se si omette l’indentazione  allora l’interprete ci restituirà un messaggio di errore. A titolo di esempio, si consideri il seguente codice, correttamente indentato, che rappresenta una classica struttura condizionale, e che si compone, oltre che del blocco <code>main</code> (che d'ora in poi ometteremo), da un blocco <code>if</code> e da un blocco <code>else</code>:
 </div>
 ```python
-if True:
-    print('True')
-else:
-    print('False')
+if True:            # blocco main
+    print('True')   # blocco if
+else:               # blocco main
+    print('False')  # blocco else
 ```
 <div style="text-align: justify;">
 Ebbene, se proviamo a eliminare l'indentazione dal suddetto codice, ovvero se scriviamo:
@@ -111,7 +137,7 @@ paragrafo = """Questo è un paragrafo. Esso si
 Il cancelletto (<code>#</code>), quando non si trova all'interno di una stringa letterale, definisce l'inizio un commento. Tutti i caratteri dopo il simbolo <code>#</code>, e fino alla fine della riga, faranno parte del commento e l'interprete Python li ignorerà. Si consideri ad esempio lo script:
 </div>
 ```python
-# Primo commento
+# primo commento
 print('Hello, Python!') # secondo commento
 ```
 Tale script, quando eseguito, produrrà il risultato seguente:
@@ -124,7 +150,7 @@ I commenti che si estendono su più righe saranno invece delimitati dalle triple
 </div>
 ```python
 """
-Questo è un commento che si dilunga
+questo è un commento che si dilunga
 su più righe.
 """
 print('Hello, Python!')

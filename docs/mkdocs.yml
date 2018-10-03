@@ -9,7 +9,11 @@ pages:
   - Sintassi di base: sintassi-di-base.md
   - Variabili: variabili.md
   - Operatori: operatori.md
+  - Input/Output: input-output.md
   - Costrutti condizionali: decision-making.md
+  - Cicli iterativi: cicli-iterativi.md
+  - Funzioni: funzioni.md
+  - OOP: oop.md
 
 theme: 
   name: 'material'

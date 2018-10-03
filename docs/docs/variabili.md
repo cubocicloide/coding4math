@@ -108,7 +108,7 @@ Hello World!TEST
 ## Liste
 
 <div style="text-align: justify;">
-Le liste sono costituiscono il più versatile tipo di dati di Python. Una lista contiene elementi separati da virgole e racchiusi tra parentesi quadre (<code>[]</code>). In un certo senso, le liste sono simili agli array di C. Una differenza tra di loro è che gli elementi appartenenti a una lista possono essere di tipi diversi. <br>
+Le liste costituiscono il più versatile tipo di dati di Python. Una lista contiene elementi separati da virgole e racchiusi tra parentesi quadre (<code>[]</code>). In un certo senso, le liste sono simili agli array di C. Una differenza tra di loro è che gli elementi appartenenti a una lista possono essere di tipi diversi. <br>
 
 &nbsp; Come per le stringhe, è possibile accedere ai valori memorizzati in una lista utilizzando l'operatore di slice (<code>[]</code> e <code>[:]</code>). Così pure l'operatore di concatenamento (<code>+</code>) e quello di ripetizione (<code>*</code>) possono essere usati, rispettivamente, per concatenare più liste e per ripetere il contenuto di una stessa lista. Ad esempio, lo script:
 </div>
