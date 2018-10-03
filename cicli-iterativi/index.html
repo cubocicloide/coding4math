@@ -1,0 +1,730 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copia">
+      
+        <meta name="lang:clipboard.copied" content="Copiato">
+      
+        <meta name="lang:search.language" content="it">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Nessun documento trovato">
+      
+        <meta name="lang:search.result.one" content="1 documento trovato">
+      
+        <meta name="lang:search.result.other" content="# documenti trovati">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
+    
+    
+      
+        <title>Cicli iterativi - Coding4Math</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.8d40d89b.css">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#cicli-iterativi" tabindex="1" class="md-skip">
+        Vai al contenuto
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Coding4Math" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Coding4Math
+              </span>
+              <span class="md-header-nav__topic">
+                Cicli iterativi
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Coding4Math
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Introduzione" class="md-nav__link">
+      Introduzione
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../set-up-mac/" title="Set-up (Mac OS High Sierra)" class="md-nav__link">
+      Set-up (Mac OS High Sierra)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../set-up-windows/" title="Set-up (Windows 10)" class="md-nav__link">
+      Set-up (Windows 10)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../shell-interattiva/" title="Shell interattiva" class="md-nav__link">
+      Shell interattiva
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../sintassi-di-base/" title="Sintassi di base" class="md-nav__link">
+      Sintassi di base
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../variabili/" title="Variabili" class="md-nav__link">
+      Variabili
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../operatori/" title="Operatori" class="md-nav__link">
+      Operatori
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../input-output/" title="Input/Output" class="md-nav__link">
+      Input/Output
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../decision-making/" title="Costrutti condizionali" class="md-nav__link">
+      Costrutti condizionali
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Cicli iterativi
+      </label>
+    
+    <a href="./" title="Cicli iterativi" class="md-nav__link md-nav__link--active">
+      Cicli iterativi
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Indice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ciclo-for" title="Ciclo for" class="md-nav__link">
+    Ciclo for
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ciclo-while" title="Ciclo while" class="md-nav__link">
+    Ciclo while
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#istruzione-break" title="Istruzione break" class="md-nav__link">
+    Istruzione break
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#istruzione-continue" title="Istruzione continue" class="md-nav__link">
+    Istruzione continue
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../funzioni/" title="Funzioni" class="md-nav__link">
+      Funzioni
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../oop/" title="OOP" class="md-nav__link">
+      OOP
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Indice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ciclo-for" title="Ciclo for" class="md-nav__link">
+    Ciclo for
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ciclo-while" title="Ciclo while" class="md-nav__link">
+    Ciclo while
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#istruzione-break" title="Istruzione break" class="md-nav__link">
+    Istruzione break
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#istruzione-continue" title="Istruzione continue" class="md-nav__link">
+    Istruzione continue
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="cicli-iterativi">Cicli iterativi</h1>
+<div style="text-align: justify;">
+I cicli iterativi sono largamente utilizzati in programmazione, e consistono nell'esecuzione di uno stesso insieme di istruzioni fintanto che una certa condizione viene verificata. Nel seguito, esamineremo i due principali cicli iterativi messi a disposizione dal linguaggio Python, ossia il ciclo <code>for</code> e il ciclo <code>while</code>.
+</div>
+
+<hr />
+<h2 id="ciclo-for">Ciclo <code>for</code></h2>
+<div style="text-align: justify;">
+Il ciclo (anche detto loop) <code>for</code> è un costrutto che consente di ripetere una data operazione su ciascun elemento di una sequenza (che potrà essere, ad esempio, una stringa, una lista, una tupla o un dizionario). La sintassi prevista per l'utilizzo del ciclo <code>for</code> è:
+</div>
+
+<pre><code class="python">for val in sequence:
+    blocco for
+</code></pre>
+
+<div style="text-align: justify;">
+dove <code>val</code> è la variabile che prende, ad ogni iterazione, il valore di ciascun elemento della sequenza <code>sequence</code>. Il seguente diagramma di flusso sintetizza la logica del ciclo <code>for</code> nel caso in cui si consideri la sequenza <code>sequence = range(n)</code> (ovvero, si ha che <code>sequence</code> è la lista dei primi <code>n</code> numeri interi, da <code>0</code> a <code>n - 1</code>):
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/for.svg" style="width: 250px;"><br><br>
+A titolo di esempio, possiamo considerare il seguente script:
+</div>
+
+<pre><code class="python">&quot;&quot;&quot;
+In questo programma calcoliamo la somma di 
+tutti i numeri contenuti in una data lista.
+&quot;&quot;&quot;
+
+# lista di numeri
+numeri = [6, 5, 3, 8, 4, 2, 5, 4, 11]
+
+# inizializziamo la variable che conterrà la somma
+somma = 0
+
+# iteriamo sugli elementi della lista
+for val in numeri:
+    somma = somma + val
+
+# output: La somma è 48
+print(&quot;La somma è &quot;, somma)
+</code></pre>
+
+<div style="text-align: justify;">
+quando tale programma sarà eseguito, restituirà l'output:
+</div>
+
+<pre><code class="python">La somma è 48
+</code></pre>
+
+<div style="text-align: justify;">
+In precedenza, abbiamo fatto cenno alla funzione <code>range()</code>. Tale funzione può essere usata per generare una sequenza di numeri interi; ad esempio, <code>range(10)</code> genererà la sequenza dei primi <code>10</code> numeri interi, cioè da <code>0</code> a <code>9</code>.
+
+Possiamo usare la funzione <code>range()</code> in un <code>for</code> loop per scorrere una sequenza di indici. Infatti, possiamo utilizzarla in combinazione con la funzione <code>len()</code> (che fornisce la lunghezza della sequenza) per iterare attraverso l'indicizzazione. Ecco un esempio:
+</div>
+
+<pre><code class="python">&quot;&quot;&quot;
+In questo programma iteriamo su di una lista
+attraverso l'indicizzazione dei suoi elementi.
+&quot;&quot;&quot;
+
+genere = ['pop', 'rock', 'jazz']
+
+for i in range(len(genere)):
+    print(&quot;Mi piace il &quot;, genere[i])
+</code></pre>
+
+<div style="text-align: justify;">
+Eseguendo il suddetto script, otterremo l'output:
+</div>
+
+<pre><code class="python">Mi piace il pop
+Mi piace il rock
+Mi piace il jazz
+</code></pre>
+
+<hr />
+<h2 id="ciclo-while">Ciclo <code>while</code></h2>
+<div style="text-align: justify;">
+Il ciclo <code>while</code> si differenzia dal ciclo <code>for</code> precedentemente descritto più a livello sintattico che funzionale; in generale è comunque possibile affermare che mentre nel ciclo <code>for</code> le iterazioni proseguono fino al raggiungimento dell'ultimo elemento della sequenza iterata, nel ciclo <code>while</code> le iterazioni continuano finché la condizione di test passata come argomento rimane vera. La sintassi prevista per l'utilizzo del ciclo <code>while</code> è:
+</div>
+
+<pre><code class="python">while condizione:
+    blocco while
+</code></pre>
+
+<div style="text-align: justify;">
+Nel ciclo <code>while</code>, l'espressione test, denominata in tal caso <code>condizione</code>, viene controllata per prima. Si eseguirà poi il <code>blocco while</code> solo se la <code>condizione</code> è vera. Dopo un'iterazione, l'espressione di test viene ricontrollata. Questo processo continua fino a quando la <code>condizione</code> diventa falsa. Di seguito proponiamo il diagramma di flusso che sintetizza quanto appena esposto:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/while.svg" style="width: 250px;"><br><br>
+A titolo di esempio, consideriamo il seguente script:
+</div>
+
+<pre><code class="python">&quot;&quot;&quot;
+In questo programma calcoliamo la somma dei primi n numeri interi:
+somma = 1 + 2 + 3 + ... + n
+&quot;&quot;&quot;
+
+# Per prelevare l'input dall'utente, utilizzare l'istruzione:
+# n = int(input(&quot;Inserire n: &quot;))
+
+n = 10
+
+# inizializziamo la somma e il contatore
+somma = 0
+i = 1
+
+while i &lt;= n:
+    somma = somma + i
+    i = i + 1    # aggiorna il contatore
+
+# stampa la somma
+print(&quot;La somma è &quot;, sum)
+</code></pre>
+
+<div style="text-align: justify;">
+Eseguendo il suddetto codice, l'output sarà:
+</div>
+
+<pre><code class="python">La somma è 55
+</code></pre>
+
+<div style="text-align: justify;">
+Nel programma precedente, l'espressione di test sarà vera finché la nostra variabile contatore <code>i</code> risulterà minore o uguale a <code>n</code> (<code>10</code>, nel nostro esempio).
+
+Si noti che abbiamo bisogno di aumentare il valore della variabile contatore all'interno del blocco <code>while</code>. In caso contrario, infatti, si otterrà un loop infinito, in quanto il programma non riuscirà mai a considerare falsa l'espressione di test.
+</div>
+
+<hr />
+<h2 id="istruzione-break">Istruzione <code>break</code></h2>
+<div style="text-align: justify;">
+L'istruzione <code>break</code>, quando impiegata all'interno di un ciclo iterativo, si occuperà di terminarlo in corrispondenza di un determinato evento, come per esempio il verificarsi di una condizione specifica.
+Sostanzialmente <code>break</code> rappresenta uno strumento attraverso il quale influenzare il flusso di esecuzione di un ciclo e, più in generale, di un'applicazione.<br>
+
+&nbsp; Data la sua natura, è logico dedurre che <code>break</code> sia stato concepito per essere impiegato in associazione a condizioni introdotte tramite <code>if</code>, e di fatto la sua sintassi, nel caso di ciclo <code>for</code> (ma funziona analogamente col ciclo <code>while</code>) è la seguente:
+</div>
+
+<pre><code class="python">for val in sequence:
+    blocco istruzioni_1
+    if condizione:
+        break
+    blocco istruzioni_2
+</code></pre>
+
+<div style="text-align: justify;">
+In questo caso, il programma uscirà immediatamente dal loop non appena la <code>condizione</code> viene valutata vera, senza perciò dover iterare su tutti gli elementi di <code>sequence</code>. Il diagramma di flusso seguente sintetizza quanto appena detto:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/break.svg" style="width: 300px;"><br>
+A titolo di esempio, è possibile analizzare lo script seguente, che riassume in poche righe il ruolo di <code>break</code> nella terminazione di un ciclo iterativo, nel caso in cui la condizione definita tramite <code>if</code> risulti vera:
+</div>
+
+<pre><code class="python">&quot;&quot;&quot;
+Uso dell'istruzione break per terminare un ciclo 
+al verificarsi di una condizione introdotta con if.
+&quot;&quot;&quot;
+
+for val in &quot;python&quot;:
+    if val == &quot;h&quot;:
+        break
+    print(val)
+
+print(&quot;Basta così.&quot;)
+</code></pre>
+
+<div style="text-align: justify;">
+Eseguendo la piccola applicazione appena proposta si otterrà in output un risultato simile a quello mostrato di seguito:
+</div>
+
+<pre><code>p
+y
+t
+Basta così.
+</code></pre>
+
+<div style="text-align: justify;">
+In pratica il <code>for</code> dovrà occuparsi di ciclare la stringa passata come argomento (<code>"python"</code>) stampando uno per uno i caratteri che la compongono; teoricamente il loop applicato su tale sequenza dovrebbe dare luogo a sei iterazioni, tante quanti sono i caratteri che compongono la stringa, ma la condizione introdotta da <code>if</code> richiede che venga verificata l'identità tra il carattere iterato e <code>"h"</code>; se questa condizione dovesse essere soddisfatta allora break bloccherà l'esecuzione del ciclo impedendo ulteriori iterazioni, e verrà stampata la notifica prevista per questo caso (<code>Basta così.</code>).
+Grazie all'istruzione di terminazione inserita in un costrutto condizionale avremo quindi soltanto tre iterazioni più un messaggio da parte dell'applicazione.
+</div>
+
+<hr />
+<h2 id="istruzione-continue">Istruzione <code>continue</code></h2>
+<div style="text-align: justify;">
+Come già sottolineato, <code>break</code> risulta particolarmente utile quando si ha l'esigenza di terminare un ciclo in corrispondenza di una condizione precedentemente definita; in alcuni casi però lo sviluppatore potrebbe non necessitare di un arresto completo del loop, e voler semplicemente evitare che quest'ultimo produca delle specifiche iterazioni. A questo scopo è disponibile un'ulteriore istruzione denominata <code>continue</code>: essa in pratica arresta l'iterazione che soddisfa una determinata condizione, ma permette il proseguimento del ciclo nella quale viene impiegata. La sua sintassi, nel caso di ciclo <code>for</code> (ma funziona analogamente col ciclo <code>while</code>), risulterà essere:
+</div>
+
+<pre><code class="python">for val in sequence:
+    blocco istruzioni_1
+    if condizione:
+        continue
+    blocco istruzioni_2
+</code></pre>
+
+<div style="text-align: justify;">
+Esaminando più nel dettaglio la suddetta sintassi, avremo che, per ogni iterazione sugli elementi di <code>sequence</code>, il <code>blocco istruzioni_1</code> sarà sempre eseguito. Tuttavia, il <code>blocco istruzioni_2</code> sarà eseguito solo per quegli elementi di <code>sequence</code> che non verificano il test <code>condizione</code>. Di seguito proponiamo il diagramma di flusso che sintetizza quanto appena detto:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/continue.svg" style="width: 300px;"><br>
+Per chiarire meglio l'utilizzo dell'istruzione <code>continue</code>, proponiamo infine una variante dello script esaminato nella precedente sottosezione:
+</div>
+
+<pre><code class="python">&quot;&quot;&quot;
+Uso dell'istruzione continue per arrestare un'iterazione
+al verificarsi di una condizione introdotta con if
+&quot;&quot;&quot;
+
+for val in &quot;python&quot;:
+    if val == &quot;h&quot;:
+        continue
+    print(val)
+
+print(&quot;Ciclo completato.&quot;)
+</code></pre>
+
+<div style="text-align: justify;">
+Una volta eseguita l'applicazione appena digitata si otterrà in output un risultato come quello presentato di seguito:
+</div>
+
+<pre><code>p
+y
+t
+o
+n
+Ciclo completato.
+</code></pre>
+
+<div style="text-align: justify;">
+Anche in questo caso <code>for</code> avrà il compito di ciclare una stringa, stampando in output, uno alla volta, tutti i caratteri da cui è composta; ciò però non avverrà se non in parte, perché <code>if</code> introduce una condizione di identità: nel momento in cui il carattere iterato dovesse essere uguale ad <code>"h"</code>, questo verrà ignorato e non parteciperà al risultato del ciclo; il loop non verrà però interrotto, nel senso che verranno effettuate tutte le iterazioni successive previste.
+</div>
+
+<p><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../decision-making/" title="Costrutti condizionali" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Precedente
+                </span>
+                Costrutti condizionali
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../funzioni/" title="Funzioni" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Prossimo
+                </span>
+                Funzioni
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © Copyright 2018, Francesco Sasso.
+          </div>
+        
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.b438e6c5.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.it.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
