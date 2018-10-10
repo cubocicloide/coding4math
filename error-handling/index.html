@@ -1,0 +1,731 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copia">
+      
+        <meta name="lang:clipboard.copied" content="Copiato">
+      
+        <meta name="lang:search.language" content="it">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Nessun documento trovato">
+      
+        <meta name="lang:search.result.one" content="1 documento trovato">
+      
+        <meta name="lang:search.result.other" content="# documenti trovati">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
+    
+    
+      
+        <title>Gestione degli errori - Coding4Math</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.8d40d89b.css">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#gestione-degli-errori" tabindex="1" class="md-skip">
+        Vai al contenuto
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Coding4Math" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Coding4Math
+              </span>
+              <span class="md-header-nav__topic">
+                Gestione degli errori
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Coding4Math
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Introduzione" class="md-nav__link">
+      Introduzione
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../set-up-mac/" title="Set-up (Mac OS High Sierra)" class="md-nav__link">
+      Set-up (Mac OS High Sierra)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../set-up-windows/" title="Set-up (Windows 10)" class="md-nav__link">
+      Set-up (Windows 10)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../shell-interattiva/" title="Shell interattiva" class="md-nav__link">
+      Shell interattiva
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../sintassi-di-base/" title="Sintassi di base" class="md-nav__link">
+      Sintassi di base
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../variabili/" title="Variabili" class="md-nav__link">
+      Variabili
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../operatori/" title="Operatori" class="md-nav__link">
+      Operatori
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../input-output/" title="Input/Output" class="md-nav__link">
+      Input/Output
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../decision-making/" title="Costrutti condizionali" class="md-nav__link">
+      Costrutti condizionali
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../cicli-iterativi/" title="Cicli iterativi" class="md-nav__link">
+      Cicli iterativi
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../funzioni/" title="Funzioni" class="md-nav__link">
+      Funzioni
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Gestione degli errori
+      </label>
+    
+    <a href="./" title="Gestione degli errori" class="md-nav__link md-nav__link--active">
+      Gestione degli errori
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Indice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#eccezioni" title="Eccezioni" class="md-nav__link">
+    Eccezioni
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-eccezioni-standard" title="Le eccezioni standard" class="md-nav__link">
+    Le eccezioni standard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tryexceptelsefinally" title="try...except...else...finally" class="md-nav__link">
+    try...except...else...finally
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raise" title="raise" class="md-nav__link">
+    raise
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../oop/" title="OOP" class="md-nav__link">
+      OOP
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../metodi-standard/" title="Metodi standard" class="md-nav__link">
+      Metodi standard
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Indice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#eccezioni" title="Eccezioni" class="md-nav__link">
+    Eccezioni
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-eccezioni-standard" title="Le eccezioni standard" class="md-nav__link">
+    Le eccezioni standard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tryexceptelsefinally" title="try...except...else...finally" class="md-nav__link">
+    try...except...else...finally
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raise" title="raise" class="md-nav__link">
+    raise
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="gestione-degli-errori">Gestione degli errori</h1>
+<div style="text-align: justify;">
+In questa sezione spiegheremo come gestire gli eventuali errori che si presentano durante l'esecuzione del nostro codice Python. In particolare, vedremo cosa è una eccezione, come sollevarla e infine come gestirla.
+</div>
+
+<hr />
+<h2 id="eccezioni">Eccezioni</h2>
+<div style="text-align: justify;">
+Un'eccezione è un evento che si verifica durante l'esecuzione di un programma e che ne interrompe il normale flusso delle istruzioni. In generale, quando uno script Python incontra una situazione a cui non può far fronte, solleva un'eccezione.
+
+In particolare, quando un'eccezione viene sollevata, è necessario gestirla immediatamente, altrimenti l'esecuzione termina prima del previsto. Per comprendere meglio quanto detto, consideriamo lo script seguente:
+</div>
+
+<pre><code class="python">&quot;&quot;&quot;
+Questo programma considera una lista di dividendi e una lista
+di divisori, e poi inserisce i risultati di ciascuna divisione
+in una lista di risultati.
+&quot;&quot;&quot;
+
+# definiamo le liste di dividendi e divisori
+dividendo = [1,24,3,12]
+divisore = [1,2,0,4]
+
+# inizializziamo i risultati a None
+risultato = [None, None, None, None]
+
+# iteriamo sulle liste per calcolare il risultato
+for i in range(len(dividendo)):
+    risultato[i] = dividendo[i] / divisore[i]
+print(risultato)
+</code></pre>
+
+<div style="text-align: justify;">
+Se proviamo ad eseguirlo, otterremo il seguente messaggio di errore:
+</div>
+
+<pre><code class="zsh">Traceback (most recent call last):
+  File &quot;script.py&quot;, line 16, in &lt;module&gt;
+    risultato[i] = dividendo[i] / divisore[i]
+ZeroDivisionError: division by zero
+</code></pre>
+
+<div style="text-align: justify;">
+Possiamo vedere che è stata sollevata l'eccezione <code>ZeroDivisionError</code>, questo perchè nel terzo ciclo di iterazione <code>divisore[2] = 0</code>. In particolare, l'esecuzione si è subito interrotta, senza dare la possibilità di terminare il ciclo di iterazioni, né tantomeno di stampare il risultato delle divisioni. In gergo si dice che il programma si è chiuso inaspettatamente, o che ha crashato. Vogliamo quindi evitare questo comportamento gestendo opportunamente l'errore che si è presentato. Vedremo nelle prossime sottosezioni come fare.
+</div>
+
+<hr />
+<h2 id="le-eccezioni-standard">Le eccezioni standard</h2>
+<p><div style="text-align: justify;">
+Prima di proseguire con la gestione delle eccezioni, proponiamo un elenco delle principali eccezioni standard incluse in Python. Per un elenco completo, si consiglia di visualizzare la documentazione ufficiale di Python.
+</div></p>
+<table>
+<thead>
+<tr>
+<th><strong>Eccezione</strong></th>
+<th><strong>Descrizione</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Exception</strong></td>
+<td>Classe base per tutte le eccezioni</td>
+</tr>
+<tr>
+<td><strong>IndentationError</strong></td>
+<td>Sollevata quando vi è un errore di indentazione</td>
+</tr>
+<tr>
+<td><strong>SyntaxError</strong></td>
+<td>Sollevata quando è presente un errore di sintassi</td>
+</tr>
+<tr>
+<td><strong>NameError</strong></td>
+<td>Sollevata quando un identificatore non viene trovato nel namespace</td>
+</tr>
+<tr>
+<td><strong>ValueError</strong></td>
+<td>Sollevata quando il valore fornito a una funzione non è valido</td>
+</tr>
+<tr>
+<td><strong>IndexError</strong></td>
+<td>Sollevata quando un indice non viene trovato nella sequenza</td>
+</tr>
+<tr>
+<td><strong>KeyError</strong></td>
+<td>Sollevata quando una specifica chiave non è presente nel dizionario</td>
+</tr>
+<tr>
+<td><strong>AritmeticError</strong></td>
+<td>Classe base per tutte le eccezioni che riguardano calcoli numerici</td>
+</tr>
+<tr>
+<td><strong>ZeroDivisionError</strong></td>
+<td>Sollevata quando si cerca di dividere un numero per zero</td>
+</tr>
+<tr>
+<td><strong>FloatingPointError</strong></td>
+<td>Sollevata quando un calcolo a virgola mobile fallisce</td>
+</tr>
+<tr>
+<td><strong>OverflowError</strong></td>
+<td>Sollevata quando un numero eccede il limite massimo previsto</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="tryexceptelsefinally"><code>try...except...else...finally</code></h2>
+<p><div style="text-align: justify;">
+A questo punto vediamo come sfruttare l'istruzione <code>try...except...else...finally</code> per gestire i nostri errori. Anzitutto, la sintassi prevista per il suo utilizzo è:
+</div></p>
+<pre><code class="python">try:
+    blocco try
+except Exception:
+    blocco except
+else:
+    blocco else
+finally:
+    blocco finally
+</code></pre>
+
+<div style="text-align: justify;">
+La logica del suddetto statement è la seguente: il programma prova (ossia <code>try</code>) ad eseguire le istruzioni contenute nel <code>blocco try</code>; se durante la sua esecuzione viene sollevata l'eccezione <code>Exception</code>, viene eseguito il <code>blocco except</code>; se invece non viene sollevata alcuna eccezione, viene eseguito il <code>blocco else</code>; infine, viene sempre eseguito il <code>blocco finally</code>. Il seguente diagramma di flusso sintetizza quanto appena detto.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/try-except-else-finally.svg" style="width: 250px;"><br><br>
+In maniera simile a quanto accade con lo statement <code>elif</code>, è possibile introdurre più di un blocco <code>except</code>, in modo da gestire diverse tipologie di eccezioni. Inoltre, gli statement <code>else</code> e <code>finally</code> sono opzionali.<br>
+&nbsp; A questo punto siamo pronti a correggere lo script visto in precedenza:
+</div>
+
+<pre><code class="python">&quot;&quot;&quot;
+Questo programma considera una lista di dividendi e una lista
+di divisori, e poi inserisce i risultati di ciascuna divisione
+in una lista di risultati.
+&quot;&quot;&quot;
+
+# definiamo le liste di dividendi e divisori
+dividendo = [1,24,3,12]
+divisore = [1,2,0,4]
+
+# inizializziamo i risultati a None
+risultato = [None, None, None, None]
+
+# iteriamo sulle liste per calcolare il risultato
+for i in range(len(dividendo)):
+    try:
+        risultato[i] = dividendo[i] / divisore[i]
+    except ZeroDivisionError:
+        print('[ERRORE] Il divisore non può essere uguale a 0.')
+print(risultato)
+</code></pre>
+
+<div style="text-align: justify;">
+Stavolta, mandando in esecuzione il programma, otterremo l'output:
+</div>
+
+<pre><code class="zsh">[ERRORE] Il divisore non può essere uguale a 0.
+[1.0, 12.0, None, 3.0]
+</code></pre>
+
+<div style="text-align: justify;">
+Si noti in particolare come l'intero ciclo di esecuzione del programma viene completato, nonostante la presenza di un divisore pari a zero. Abbiamo quindi evitato l'interruzione inaspettata dello script e, al contempo, abbiamo fornito un messaggio di errore significativo.
+</div>
+
+<hr />
+<h2 id="raise"><code>raise</code></h2>
+<div style="text-align: justify;">
+Chiudiamo questa sezione spiegando come sollevare una eccezione. La keyword introdotta a tal fine dal linguaggio Python è <code>raise</code>. La sintassi per il suo utilizzo è:
+</div>
+
+<pre><code class="python">raise Exception
+</code></pre>
+
+<div style="text-align: justify;">
+dove <code>Exception</code> identifica il tipo di eccezione da sollevare (as es., <code>ValueError</code>). Possiamo quindi modificare il precedente script in modo da fornire una gestione più completa dell'errore, in cui è il programmatore, e non l'interprete, a sollevare l'eccezione:
+</div>
+
+<pre><code class="python">def dividi(x,y):
+    &quot;&quot;&quot;
+    Questa funzione implementa la divisione x / y, accertandosi che il divisore 
+    non sia nullo, e sollevando una eccezione qualora lo sia.
+    &quot;&quot;&quot;
+    if y == 0:
+        raise ValueError('[ERRORE] Il divisore non può essere uguale a 0.')
+    return x / y
+
+dividendo = [1,24,3,12]
+divisore = [1,2,0,4]
+risultato = [None, None, None, None]
+
+for i in range(len(dividendo)):
+    try:
+        risultato[i] = dividi(dividendo[i],divisore[i])
+    except ValueError as error:     # utilizziamo un alias per poter stampare il messaggio di errore
+        print(error)     
+print(risultato)
+</code></pre>
+
+<div style="text-align: justify;">
+In questo script abbiamo definito la funzione <code>dividi()</code> in cui viene implementata la divisione di due numeri. All'interno della funzione viene verificato che il divisore sia non nullo e, qualora lo sia, viene sollevata l'eccezione <code>ValueError</code>, in cui si specifica il relativo messaggio di errore. Eseguendo lo script, otterremo il seguente risultato:
+</div>
+
+<pre><code class="python">[ERRORE] Il divisore non può essere uguale a 0.
+[1.0, 12.0, None, 3.0]
+</code></pre>
+
+<p><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../funzioni/" title="Funzioni" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Precedente
+                </span>
+                Funzioni
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../oop/" title="OOP" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Prossimo
+                </span>
+                OOP
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © Copyright 2018, Francesco Sasso.
+          </div>
+        
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.b438e6c5.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.it.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>

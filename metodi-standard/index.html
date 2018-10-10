@@ -36,7 +36,7 @@
     
     
       
-        <title>Shell interattiva - Coding4Math</title>
+        <title>Metodi standard - Coding4Math</title>
       
     
     
@@ -70,7 +70,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#shell-interattiva" tabindex="1" class="md-skip">
+      <a href="#metodi-standard" tabindex="1" class="md-skip">
         Vai al contenuto
       </a>
     
@@ -96,7 +96,7 @@
                 Coding4Math
               </span>
               <span class="md-header-nav__topic">
-                Shell interattiva
+                Metodi standard
               </span>
             
           
@@ -176,20 +176,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-    <a href="./" title="Shell interattiva" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../shell-interattiva/" title="Shell interattiva" class="md-nav__link">
       Shell interattiva
     </a>
-    
   </li>
 
     
@@ -305,11 +296,63 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../metodi-standard/" title="Metodi standard" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Metodi standard
+      </label>
+    
+    <a href="./" title="Metodi standard" class="md-nav__link md-nav__link--active">
       Metodi standard
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Indice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#stringhe" title="Stringhe" class="md-nav__link">
+    Stringhe
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#liste" title="Liste" class="md-nav__link">
+    Liste
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dizionari" title="Dizionari" class="md-nav__link">
+    Dizionari
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -330,6 +373,36 @@
     
   
   
+    <label class="md-nav__title" for="toc">Indice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#stringhe" title="Stringhe" class="md-nav__link">
+    Stringhe
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#liste" title="Liste" class="md-nav__link">
+    Liste
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dizionari" title="Dizionari" class="md-nav__link">
+    Dizionari
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -341,70 +414,199 @@
               
                 
                 
-                <h1 id="shell-interattiva">Shell interattiva</h1>
+                <h1 id="metodi-standard">Metodi standard</h1>
 <div style="text-align: justify;">
-La seguente shell interattiva consente, a chi non fosse stato in grado di mettere a punto il proprio dispositivo, di poter cominciare a programmare in Python. Per poterla usare, basterà semplicemente scrivere il codice nella colonna <code>script.py</code>, e poi eseguirlo cliccando sul pulsante <code>Run</code>. L'output dello script sarà infine visualizzato nella colonna <code>IPython Shell</code>.
-
-<input type="text" name="foo" id="input" value="" />
+Nella precedente sezione abbiamo parlato di OOP e, in particolare, abbiamo visto che un oggetto è un'istanza di una classe. Abbiamo anche visto, nella sezione dedicata alla variabili, alcuni tipi standard. Ebbene, tali tipi sono essi stessi degli oggetti, che quindi dispongono di attributi e metodi, con questi ultimi che consentono agli sviluppatori, in molti casi, di non dover re-inventare la ruota. L'obiettivo di questa sezione è quindi quello di elencare i metodi principali dei seguenti tipi standard di variabili:
+<ul>
+<li>Stringhe</li>
+<li>Liste</li>
+<li>Dizionari</li>
+</ul>
+Per un elenco completo si rimanda alla documentazione ufficiale di Python.
 </div>
 
 <hr />
-<div data-datacamp-exercise data-lang="python" data-height="570px" >
-    <code data-type="sample-code" >
-    print('Hello World')
-    </code>
+<h2 id="stringhe">Stringhe</h2>
+<div style="text-align: justify;">
+Di seguito un elenco dei principali metodi associati ad oggetti di tipo stringa.
 </div>
 
-<!-- ---
+<table>
+<thead>
+<tr>
+<th><strong>Metodo</strong></th>
+<th><strong>Descrizione</strong></th>
+<th><strong>Esempio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>capitalize()</code></td>
+<td>Converte il primo carattere in maiuscolo e i restanti in minuscolo.</td>
+<td><code>'aBc'.capitalize() == 'Abc'</code></td>
+</tr>
+<tr>
+<td><code>lower()</code></td>
+<td>Converte tutti i caratteri in minuscolo.</td>
+<td><code>'ABC'.lower() == 'abc'</code></td>
+</tr>
+<tr>
+<td><code>upper()</code></td>
+<td>Converte tutti i caratteri in maiuscolo.</td>
+<td><code>'abc'.upper() == 'ABC'</code></td>
+</tr>
+<tr>
+<td><code>count()</code></td>
+<td>Conta quante volte una stringa è ripetuta in un'altra.</td>
+<td><code>'abcabc'.count('abc') == 2</code></td>
+</tr>
+<tr>
+<td><code>find()</code></td>
+<td>Restituisce l'indice della prima occorrenza di una stringa in un'altra.</td>
+<td><code>'abca'.find('a') == 0</code></td>
+</tr>
+<tr>
+<td><code>isalpha()</code></td>
+<td>Stabilisce se una data stringa è alfabetica.</td>
+<td><code>'abc'.isalpha() == True</code></td>
+</tr>
+<tr>
+<td><code>isnumeric()</code></td>
+<td>Stabilisce se una data stringa è numerica.</td>
+<td><code>'123'.isnumeric() == True</code></td>
+</tr>
+<tr>
+<td><code>split()</code></td>
+<td>Restituisce una lista con le parole della stringa.</td>
+<td><code>'a b c'.split() == ['a', 'b', 'c']</code></td>
+</tr>
+<tr>
+<td><code>replace()</code></td>
+<td>Rimpiazza una sottostringa con un'altra.</td>
+<td><code>'abc'.replace('a', 'd') == 'dbc'</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="liste">Liste</h2>
+<div style="text-align: justify;">
+Di seguito un elenco dei principali metodi associati ad oggetti di tipo lista.
+</div>
 
-<div data-datacamp-exercise data-lang="python" data-height="570px" >
-    <code data-type="sample-code" >
-from urllib.request import urlopen
+<table>
+<thead>
+<tr>
+<th><strong>Metodo</strong></th>
+<th><strong>Descrizione</strong></th>
+<th><strong>Esempio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>append()</code></td>
+<td>Aggiunge un elemento alla fine della lista.</td>
+<td><code>['a'].append('b') == ['a', 'b']</code></td>
+</tr>
+<tr>
+<td><code>insert()</code></td>
+<td>Inserisce un elemento in una data posizione.</td>
+<td><code>['a', 'c'].insert(1, 'b') == ['a', 'b', 'c']</code></td>
+</tr>
+<tr>
+<td><code>extend()</code></td>
+<td>Aggiunge gli elementi di una lista alla fine di un'altra lista.</td>
+<td><code>['a', 'b'].extend(['c', 'd']) == ['a', 'b', 'c', 'd']</code></td>
+</tr>
+<tr>
+<td><code>remove()</code></td>
+<td>Rimuove un elemento dalla lista.</td>
+<td><code>['a', 'b'].remove('b') == ['a']</code></td>
+</tr>
+<tr>
+<td><code>index()</code></td>
+<td>Restituisce il primo indice di un dato elemento nella lista.</td>
+<td><code>['a', 'b', 'a'].index('a') == 0</code></td>
+</tr>
+<tr>
+<td><code>count()</code></td>
+<td>Conta quante volte è presente un dato elemento nella lista.</td>
+<td><code>['a', 'b', 'a'].count('a') == 2</code></td>
+</tr>
+<tr>
+<td><code>pop()</code></td>
+<td>Elimina dalla lista l'elemento in un dato indice.</td>
+<td><code>['a', 'b', 'a'].pop(2) == ['a', 'b']</code></td>
+</tr>
+<tr>
+<td><code>reverse()</code></td>
+<td>Inverte gli elementi della lista.</td>
+<td><code>['a', 'b', 'c'].reverse() == ['c', 'b', 'a']</code></td>
+</tr>
+<tr>
+<td><code>sort()</code></td>
+<td>Ordina gli elementi della lista.</td>
+<td><code>['b', 'c', 'a'].reverse() == ['a', 'b', 'c']</code></td>
+</tr>
+<tr>
+<td><code>clear()</code></td>
+<td>Elimina tutti gli elementi della lista.</td>
+<td><code>['a', 'b'].clear() == []</code></td>
+</tr>
+<tr>
+<td><code>max()</code></td>
+<td>Restituisce il valore massimo nella lista.</td>
+<td><code>max([1, 4, 3]) == 4 </code></td>
+</tr>
+<tr>
+<td><code>min()</code></td>
+<td>Restituisce il valore minimo nella lista.</td>
+<td><code>min([1, 4, 3]) == 1 </code></td>
+</tr>
+<tr>
+<td><code>sum()</code></td>
+<td>Somma gli elementi della lista.</td>
+<td><code>sum([1, 4, 3]) == 8 </code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dizionari">Dizionari</h2>
+<div style="text-align: justify;">
+Di seguito un elenco dei principali metodi associati ad oggetti di tipo dizionario.
+</div>
 
-import json
-import matplotlib.pyplot as plt
-import numpy as np
-
-url_base = 'https://api.weatherbit.io/v2.0/forecast/daily?'
-postal_code = '72100'
-country = 'IT'
-key = 'a2e592329c9549dc8906aa5b9e84fc3b'
-
-url = url_base + 'postal_code=' + postal_code \
-            + '&country=' + country \
-            + '&key=' + key
-
-try:
-    data = json.loads(urlopen(url).read().decode('utf-8'))
-except:
-    print('[ERROR] Invalid postal code or country code.')
-else:
-    # plot the minimum and the maximum temperature as function of the days
-    day = np.zeros((len(data['data']),1))
-    temp = np.zeros((len(data['data']),2))
-    for i in range(0,len(data['data'])):
-        day[i] = i
-        temp[i][0] = data['data'][i]['min_temp']
-        temp[i][1] = data['data'][i]['max_temp']
-
-    fig, ax = plt.subplots()
-    ax.plot(day, temp[:,0])
-    ax.plot(day, temp[:,1])
-
-    ax.set(xlabel='Days', 
-           ylabel='Temperature range', 
-           title= data['city_name'] + ': 16 days weather forecast')
-    ax.grid()
-
-    # show the results
-    plt.show()
-
-
-    </code>
-</div> -->
-
+<table>
+<thead>
+<tr>
+<th><strong>Metodo</strong></th>
+<th><strong>Descrizione</strong></th>
+<th><strong>Esempio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>keys()</code></td>
+<td>Restituisce una lista con le chiavi del dizionario.</td>
+<td><code>{'a': 1, 'b': 2}.keys() == ['a', 'b']</code></td>
+</tr>
+<tr>
+<td><code>values()</code></td>
+<td>Restituisce una lista con i valori del dizionario.</td>
+<td><code>{'a': 1, 'b': 2}.values() == [1, 2]</code></td>
+</tr>
+<tr>
+<td><code>clear()</code></td>
+<td>Rimuove tutti gli elementi del dizionario.</td>
+<td><code>{'a': 1, 'b': 2}.clear() == {}</code></td>
+</tr>
+<tr>
+<td><code>update()</code></td>
+<td>Aggiorna il dizionario inserendo nuove coppie chiave-valore.</td>
+<td><code>{'a': 1, 'b': 2}.update({'c': 3}) == {'a': 1, 'b': 2, 'c': 3}</code></td>
+</tr>
+</tbody>
+</table>
 <p><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></p>
-<script type="text/javascript" src="//cdn.datacamp.com/dcl-react.js.gz"></script>
                 
                   
                 
@@ -425,7 +627,7 @@ else:
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../set-up-windows/" title="Set-up (Windows 10)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../oop/" title="OOP" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -434,25 +636,11 @@ else:
                 <span class="md-footer-nav__direction">
                   Precedente
                 </span>
-                Set-up (Windows 10)
+                OOP
               </span>
             </div>
           </a>
         
-        
-          <a href="../sintassi-di-base/" title="Sintassi di base" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Prossimo
-                </span>
-                Sintassi di base
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
