@@ -54,10 +54,10 @@ Ogni programma Python si compone dei seguenti tipi di blocchi di codice:
     <code>for</code> e <code>while</code>: sono i blocchi che definiscono i cicli iterativi del programma;
     </li>
     <li>
-    <code>def function</code> e <code>def Class</code>: si tratta dei blocchi che introducono le funzioni e le classi del programma;
+    <code>try...except...else...finally</code>: sono blocchi impiegati nella gestione delle eccezioni e degli errori del programma.
     </li>
     <li>
-    <code>try...except...else</code>: sono blocchi impiegati nella gestione delle eccezioni e degli errori del programma.
+    <code>def function</code> e <code>class Class</code>: si tratta dei blocchi che introducono le funzioni e le classi del programma;
     </li>
 </ul>
 Nelle prossime sezioni esamineremo più nel dettaglio tutti gli elementi della suddetta lista.

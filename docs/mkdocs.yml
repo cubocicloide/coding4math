@@ -13,7 +13,9 @@ pages:
   - Costrutti condizionali: decision-making.md
   - Cicli iterativi: cicli-iterativi.md
   - Funzioni: funzioni.md
+  - Gestione degli errori: error-handling.md
   - OOP: oop.md
+  - Metodi standard: metodi-standard.md
 
 theme: 
   name: 'material'
