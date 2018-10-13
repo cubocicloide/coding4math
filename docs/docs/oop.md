@@ -139,22 +139,8 @@ Più in generale, data la classe <code>Classe</code>, un suo metodo <code>metodo
 oggetto.metodo()
 ```
 <div style="text-align: justify;">
-Terminiamo la sottosezione dicendo che, oltre ai metodi speciali, ci sono ovviamente i metodi personalizzati definiti dal programmatore. Ad esempio, possiamo inserire nella classe <code>Poligono</code> il metodo <code>area()</code>, che per il momento lasciamo vuoto e che servirà a calcolarne l'area:
+Terminiamo la sottosezione dicendo che, oltre ai metodi speciali, ci sono ovviamente i metodi personalizzati definiti dal programmatore, come vedremo nella prossima sottosezione. 
 </div>
-```python
-class Poligono:
-    def __init__(self, tipo, base, altezza):
-        self.tipo = tipo
-        self.base = base
-        self.altezza = altezza
-
-    def __str__(self):
-        print('Il poligono considerato è un {0}.'.format(self.tipo))
-        print('Base: {0}. Altezza: {1}.'.format(self.base, self.altezza))
-
-    def area(self):
-        pass
-```
 
 ---
 ## Principi della OOP
@@ -164,6 +150,7 @@ Abbiamo introdotto gli elementi cardine della OOP, ossia le classi (che si compo
 <ul>
 <li>Incapsulamento</li>
 <li>Ereditarietà</li>
+<li>Astrazione</li>
 <li>Polimorfismo</li>
 </ul>
 </div>
@@ -186,7 +173,7 @@ Il poligono considerato è un pinco_pallino.
 Base: -3. Altezza: -4.
 ```
 <div style="text-align: justify;">
-ossia, il programma, pur sintatticamente corretto, è semanticamente scorretto, in quanto nella realtà non vi è alcun poligono <code>pinco_pallino</code>, nè tantomeno poligoni che abbiano base o altezza negativa. Per correggere l'errore semantico, dobbiamo limitare l'accesso agli attributi della classe, e per farlo, dobbiamo impiegare dei metodi noti in letteratura come metodi getter e setter. Nel linguaggio Python, l'implementazione di tali metodi avviene tramite il decoratore integrato <code>@property</code>. Nel nostro caso, i metodi getter e setter per ciascun attributo dovranno occuparsi di verificare che i valori inseriti dall'utente siano corretti. La classe sarà quindi modificata come segue:
+ossia, il programma, pur sintatticamente corretto, è semanticamente scorretto, in quanto nella realtà non vi è alcun poligono <code>pinco_pallino</code>, nè tantomeno poligoni che abbiano base o altezza negativa. Per correggere l'errore semantico, dobbiamo limitare l'accesso agli attributi della classe, e per farlo, dobbiamo impiegare dei metodi noti in letteratura come metodi getter e setter. Nel linguaggio Python, l'implementazione di tali metodi avviene tramite il <a href="https://gist.github.com/Zearin/2f40b7b9cfc51132851a" target="_blank">decoratore</a> integrato <code>@property</code>. Nel nostro caso, i metodi getter e setter, per ciascun attributo, dovranno occuparsi di verificare che i valori inseriti dall'utente siano corretti. La classe sarà quindi modificata come segue:
 </div>
 ```python
 class Poligono:
@@ -285,7 +272,7 @@ class Triangolo(Poligono):
 ```
 <div style="text-align: justify;">
 In particolare, <code>Triangolo</code> sarà la classe child di <code>Poligono</code>, mentre <code>Poligono</code> sarà la classe parent di <code>Triangolo</code>.<br> 
-&nbsp; Per dare maggiore senso alla classe <code>Triangolo</code>, estendiamo i metodi speciali <code>__init__()</code> e <code>__str()___</code> della sua classe parent (tramite la funzione integrata <code>super()</code>), ed effettuiamo l'override del metodo <code>area()</code> della sua classe parent (ossia, non la estendiamo tramite <code>super()</code>) al fine di calcolarne l'area:
+&nbsp; Per dare maggiore senso alla classe <code>Triangolo</code>, estendiamo i metodi speciali <code>__init__()</code> e <code>__str()___</code> della sua classe parent, e lo facciamo tramite la funzione integrata <code>super()</code><sup><a href="#fn0" id="ref0">1</a></sup>:
 </div>
 ```python
 class Triangolo(Poligono):
@@ -294,10 +281,6 @@ class Triangolo(Poligono):
 
     def __str__(self):
         super().__str__()
-        print('Area: {0}.'.format(self.area()))
-
-    def area(self):
-        return self.base * self.altezza / 2
 ```
 <div style="text-align: justify;">
 Giunti qui, lanciando il seguente script:
@@ -316,10 +299,93 @@ otterremo l'output:
 ```
 Il poligono considerato è un triangolo.
 Base: 3. Altezza: 4.
+```
+<div style="text-align: justify;">
+Si noti in particolare che la classe <code>Triangolo</code> ha ereditato per intero i metodi getter e setter della sua classe parent, inoltre ha esteso i metodi <code>__init__()</code> e <code>__str__()</code> della sua classe parent. La cosa importante da ricordare è che le classi child ereditano tutti gli attributi e i metodi delle relative classi parent, e hanno la possibilità di modificarli e di aggiungerne di nuovi.
+</div>
+
+---
+### Astrazione
+
+<div style="text-align: justify;">
+Ci occupiamo ora di astrazione, fornendo subito un esempio. Tutti noi sappiamo che è possibile il calcolo dell'area di un poligono, tuttavia la formula dell'area dipende dal tipo di poligono considerato. In altre parole, sappiamo in astratto come calcolare l'area di un poligono a patto di conoscerne il tipo, ad esempio un triangolo o un rettangolo; ovvero, nota la classe child del <code>Poligono</code>, possiamo determinarne l'area.<br>
+&nbsp; Per accertarsi che ciascuna classe child implementi il calcolo dell'area, bisognerà allora dichiarare come astratta la classe <code>Poligono</code>, e definire un suo metodo astratto che sia predisposto al calcolo dell'area, una volta nota una sua classe child. A tal fine, il linguaggio Python mette a disposizione il modulo <code>abc</code>, da cui è possibile importare la classe <code>ABC</code> e la funzione <code>abstractmethod</code>:
+</div>
+```python
+from abc import ABC, abstractmethod
+
+class Poligono(ABC):
+    def __init__(self, tipo, base, altezza):
+        self.tipo = tipo
+        self.base = base
+        self.altezza = altezza
+
+    def __str__(self):
+        print('Il poligono considerato è un {0}.'.format(self.tipo))
+        print('Base: {0}. Altezza: {1}.'.format(self.base, self.altezza))
+
+    @abstractmethod
+    def area(self):
+        pass
+```
+<div style="text-align: justify;">
+Si noti in particolare che la classe <code>Poligono</code> è ora una classe child di <code>ABC</code>, e che il suo metodo <code>area()</code> è stato dichiarato astratto mediante il decoratore <code>@abstractmethod</code>. A questo punto, eseguendo lo script:
+</div>
+```
+try:
+    triangolo = Triangolo(3,4)
+except ValueError as error:
+    print(error)       
+else:
+    triangolo.__str__()
+```
+<div style="text-align: justify;">
+verrà sollevata la seguente eccezione <code>TypeError</code>
+</div>
+```
+Traceback (most recent call last):
+  File "main_1.py", line 65, in <module>
+    main()
+  File "main_1.py", line 58, in main
+    triangolo = Triangolo(3,4)
+TypeError: Can't instantiate abstract class Triangolo with abstract methods area
+```
+<div style="text-align: justify;">
+Questo errore si presenta perchè, nella classe child <code>Triangolo</code>, non è stato implementato il metodo astratto <code>area()</code> presente nella sua classe parent. Per correggere l'errore, implementiamo questo metodo:
+</div>
+```
+class Triangolo(Poligono):
+    def __init__(self, base, altezza):
+        super().__init__(tipo = 'triangolo', base = base, altezza = altezza)
+
+    def __str__(self):
+        super().__str__()
+        print('Area: {0}.'.format(self.area()))
+
+    def area(self):
+        return self.base * self.altezza / 2
+```
+<div style="text-align: justify;">
+Andando infine a rieseguire lo script:
+</div>
+```
+try:
+    triangolo = Triangolo(3,4)
+except ValueError as error:
+    print(error)       
+else:
+    triangolo.__str__()
+```
+<div style="text-align: justify;">
+otterremo l'output:
+</div>
+```
+Il poligono considerato è un triangolo.
+Base: 3. Altezza: 4.
 Area: 6.0.
 ```
 <div style="text-align: justify;">
-Si noti in particolare che la classe <code>Triangolo</code> ha ereditato per intero i metodi getter e setter della sua classe parent, ha esteso i metodi <code>__init__()</code> e <code>__str__()</code> della sua classe parent, e ha sovrascritto (override) il metodo <code>area()</code> della sua classe parent. La cosa importante da ricordare è che le classi child ereditano tutti gli attributi e i metodi delle relative classi parent, e hanno la possibilità di modificarli e di aggiungerne di nuovi.
+In conclusione, l'astrazione è uno strumento che obbliga ciascuna classe child a implementare i metodi astratti delle sue classi parent.
 </div>
 
 ---
@@ -374,5 +440,103 @@ Area di rettangolo: 8.
 Quindi il polimorfismo consente di definire funzioni che possano prendere in input oggetti di qualsiasi forma, che però posseggano un metodo in comune.
 </div>
 
+---
+### Script riassuntivo
+
+<div style="text-align: justify;">
+Tutto quanto abbiamo detto nelle precedenti sottosezioni viene quindi sintetizzato in un unico script, che per completezza riportiamo qui di seguito:
+</div>
+```
+from abc import ABC, abstractmethod
+
+class Poligono:
+    def __init__(self, tipo, base, altezza):
+        self.tipo = tipo
+        self.base = base
+        self.altezza = altezza
+
+    def __str__(self):
+        print('Il poligono considerato è un {0}.'.format(self.tipo))
+        print('Base: {0}. Altezza: {1}.'.format(self.base, self.altezza))
+
+    @abstractmethod
+    def area(self):
+        pass
+
+    @property
+    def tipo(self):
+        return self._tipo
+    @tipo.setter
+    def tipo(self, tipo):
+        if tipo not in ('triangolo', 'rettangolo'):
+            raise ValueError('[ERROR] Il tipo di poligono inserito non è supportato.')
+        else:
+            self._tipo = tipo
+    
+    @property
+    def base(self):
+        return self._base
+    @base.setter
+    def base(self, base):
+        if base <= 0:
+            raise ValueError('[ERROR] La base non può essere minore o uguale a 0.')
+        self._base = base
+
+    @property
+    def altezza(self):
+        return self._altezza
+    @altezza.setter
+    def altezza(self, altezza):
+        if altezza <= 0:
+            raise ValueError("[ERROR] L'altezza non può essere minore o uguale a 0.")
+        self._altezza = altezza
+
+class Triangolo(Poligono):
+    def __init__(self, base, altezza):
+        super().__init__(tipo = 'triangolo', base = base, altezza = altezza)
+
+    def __str__(self):
+        super().__str__()
+        print('Area: {0}.'.format(self.area()))
+
+    def area(self):
+        super().area()
+        return self.base * self.altezza / 2
+
+class Rettangolo(Poligono):
+    def __init__(self, base, altezza):
+        super().__init__(tipo = 'rettangolo', base = base, altezza = altezza)
+
+    def __str__(self):
+        super().__str__()
+        print('Area: {0}.'.format(self.area()))
+
+    def area(self):
+        super().area()
+        return self.base * self.altezza
+    
+    def perimetro(self):
+        return 2 * (self.base + self.altezza)
+
+def calcola_area(poligono):
+    return poligono.area()
+
+try:
+    triangolo = Triangolo(3,2)
+    rettangolo = Rettangolo(4,2)
+except ValueError as error:
+    print(error)       
+else:
+    print("Area di triangolo: {0}.".format(calcola_area(triangolo)))
+    print("Area di rettangolo: {0}.".format(calcola_area(rettangolo)))
+
+```
+
+
+
+
+<hr>
+<sup id="fn0">1. Si noti che non è necessario estendere i metodi della classe parent. Inoltre, tali metodi si possono ridefinire interamente. In tal caso si dice fare l'override del metodo.
+</sup>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">

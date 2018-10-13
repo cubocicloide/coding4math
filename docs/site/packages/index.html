@@ -36,7 +36,7 @@
     
     
       
-        <title>Input/Output - Coding4Math</title>
+        <title>Packages - Coding4Math</title>
       
     
     
@@ -70,7 +70,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#inputoutput" tabindex="1" class="md-skip">
+      <a href="#packages" tabindex="1" class="md-skip">
         Vai al contenuto
       </a>
     
@@ -96,7 +96,7 @@
                 Coding4Math
               </span>
               <span class="md-header-nav__topic">
-                Input/Output
+                Packages
               </span>
             
           
@@ -224,56 +224,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Input/Output
-      </label>
-    
-    <a href="./" title="Input/Output" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../input-output/" title="Input/Output" class="md-nav__link">
       Input/Output
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Indice</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#output-mediante-print" title="Output mediante print()" class="md-nav__link">
-    Output mediante print()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#input-mediante-input" title="Input mediante input()" class="md-nav__link">
-    Input mediante input()
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -365,11 +320,63 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../packages/" title="Packages" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Packages
+      </label>
+    
+    <a href="./" title="Packages" class="md-nav__link md-nav__link--active">
       Packages
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Indice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#organizzazione-del-codice" title="Organizzazione del codice" class="md-nav__link">
+    Organizzazione del codice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importare-moduli-da-packages" title="Importare moduli da packages" class="md-nav__link">
+    Importare moduli da packages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pypi" title="PyPI" class="md-nav__link">
+    PyPI
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -418,15 +425,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#output-mediante-print" title="Output mediante print()" class="md-nav__link">
-    Output mediante print()
+  <a href="#organizzazione-del-codice" title="Organizzazione del codice" class="md-nav__link">
+    Organizzazione del codice
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#input-mediante-input" title="Input mediante input()" class="md-nav__link">
-    Input mediante input()
+  <a href="#importare-moduli-da-packages" title="Importare moduli da packages" class="md-nav__link">
+    Importare moduli da packages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pypi" title="PyPI" class="md-nav__link">
+    PyPI
   </a>
   
 </li>
@@ -448,93 +462,180 @@
               
                 
                 
-                <h1 id="inputoutput">Input/Output</h1>
+                <h1 id="packages">Packages</h1>
 <div style="text-align: justify;">
-Python fornisce numerose funzioni integrate che ci consentono di interfacciarci con il prompt.
-
-Alcune di queste funzioni, come ad esempio <code>input()</code> e <code>print()</code>, sono ampiamente utilizzate, rispettivamente, per le operazioni standard di input e output. Incominciamo a vedere per prima la sezione dedicata agli output.
+In questa sezione vedremo come suddividere l'applicazione in moduli distribuiti in Python packages. Inoltre, mostreremo come importare e utilizzare packages (siano essi personali o di terze parti) all'interno di un programma.
 </div>
 
 <hr />
-<h2 id="output-mediante-print">Output mediante <code>print()</code></h2>
+<h2 id="organizzazione-del-codice">Organizzazione del codice</h2>
 <div style="text-align: justify;">
-Come abbiamo già avuto modo di vedere nelle precedenti sezioni, possiamo usare la funzione <code>print()</code> per stampare i dati sul prompt. Un esempio del suo utilizzo è dato qui sotto:
+Di solito non archiviamo tutti i file in una stessa locazione del nostro computer. Utilizziamo invece una gerarchia di directory ben organizzata per un accesso più semplice.
+
+File simili sono conservati in una stessa directory, ad esempio si possono conservare tutti i brani nella directory musica. Analogamente, Python ha package per directory, e moduli per file.
+
+Poiché la nostra applicazione potrebbe contenere un elevato numero di moduli, decidiamo di raggruppare quelli simili in un unico package e moduli diversi in package diversi. Ciò renderà l'applicazione facile da gestire e concettualmente più chiara.
+
+Procedendo per analogia, così come una directory può contenere al suo interno altre directory e file, anche un package Python può avere al suo interno altri package e moduli.
+
+Una directory, affinché sia considerata un package dall'interprete Python, deve contenere al suo interno un file chiamato <code>__init__.py</code>. Questo file può essere lasciato vuoto, in caso contrario conterrà al suo interno il codice di inizializzazione del package che lo contiene.<br>
+
+&nbsp; Per facilitare la comprensione, proseguiamo la discussione introducendo un esempio. Supponiamo di stare sviluppando un gioco, allora una possibile organizzazione di package e moduli potrebbe essere la seguente.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/packages.svg" style="width: 500px;"><br>
+
 </div>
 
-<pre><code class="python">print('questa frase viene stampata sullo schermo')
-# output: questa frase viene stampata sullo schermo
+<hr />
+<h2 id="importare-moduli-da-packages">Importare moduli da packages</h2>
+<div style="text-align: justify;">
+Possiamo importare moduli da pacchetti usando l'operatore punto <code>.</code>.
 
-a = 5
-print('il valore di a è', a)
-# output: il valore di a è 5
+Ad esempio, se si desidera importare il modulo <code>start</code> del package <code>Level</code> dell'esempio precedente, ciò può essere fatto mediante l'istruzione:
+</div>
+
+<pre><code>import Game.Level.start
 </code></pre>
 
 <div style="text-align: justify;">
-La sintassi della funzione <code>print()</code> è
+A questo punto, se tale modulo contiene una funzione <code>select_difficulty</code>, dovremo chiamarla utilizzando l'intero percorso che la individua:
 </div>
 
-<pre><code class="python">print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+<pre><code>Game.Level.start.select_difficulty()
 </code></pre>
 
 <div style="text-align: justify;">
-Si noti in particolare che:
+Se questo costrutto appare troppo lungo, possiamo importare il modulo senza il prefisso del package come segue:
+</div>
+
+<pre><code>from Game.Level import start
+</code></pre>
+
+<div style="text-align: justify;">
+di modo che adesso la chiamata alla funzione risulterà essere
+</div>
+
+<pre><code>start.select_difficulty()
+</code></pre>
+
+<div style="text-align: justify;">
+Un altro modo tramite cui importare solo la funzione richiesta (o la classe o la variabile) da un modulo all'interno di un package è il seguente:
+</div>
+
+<pre><code>from Game.Level.start import select_difficulty
+</code></pre>
+
+<div style="text-align: justify;">
+In tal caso, potremo chiamare direttamente la funzione come:
+</div>
+
+<pre><code>select_difficulty()
+</code></pre>
+
+<div style="text-align: justify;">
+Questo metodo di importare funzioni (o classi o variabili) è però soggetto a possibili conflitti tra identificatori identici che si riferiscono però a moduli diversi (ad esempio i packages <code>Sound</code> e <code>Level</code> contengono entrambi un modulo <code>load</code>).
+</div>
+
+<hr />
+<h2 id="pypi">PyPI</h2>
+<div style="text-align: justify;">
+Il Python Package Index, detto anche <a href="https://pypi.org/" target="_blank">PyPI</a>, è una piattaforma su cui è possibile pubblicare e scaricare gratuitamente una vasta gamma di Python packages. Grazie al notevole sforzo della comunità Python, potremo in particolare usufruire di progetti che ci consentiranno un IoC (Inversion of Control) sul nostro applicativo, ovvero, in altri termini, ci eviteranno di re-inventare la ruota. Tra i diversi progetti che è possibile scaricare, vi sono ad esempio:
 <ul>
-<li><code>objects</code> sono gli oggetti che verranno stampati;</li>
-<li><code>sep</code> è il separatore che sarà utilizzato tra i diversi oggetti (il suo valore di default è il carattere spazio);</li>
-<li><code>end</code> è ciò che viene stampato subito dopo gli oggetti (il suo valore di default è <code>\n</code>, che corrisponde all'andata a capo);</li>
-<li><code>file</code> indica dove l'oggetto sarà stampato (il suo valore di default è <code>sys.stdout</code>, ovvero il prompt di Python).</li>
+<li><a href="https://pypi.org/project/numpy/" target="_blank">numpy</a>: consente la realizzazione di applicativi scientifici;</li>
+<li><a href="https://pypi.org/project/matplotlib/" target="_blank">matplotlib</a>: rende possibile il plot di funzioni matematiche;</li>
+<li><a href="https://pypi.org/project/tensorflow/" target="_blank">tensorflow</a>: permette di implementare algoritmi di Machine Learning;</li>
+<li><a href="https://pypi.org/project/Django/" target="_blank">Django</a>: utile per sviluppare applicativi web;</li>
+<li><a href="https://pypi.org/project/mkdocs/" target="_blank">mkdocs</a>: consente la realizzazione di guide come questo sito che state consultando.</li>
 </ul>
-Di seguito forniamo un esempio in cui variamo alcuni dei valori di default:
+Per capire l'utilità di questi progetti, forniamo come al solito un esempio. Supponiamo di voler eseguire il plot della funzione matematica seno. Possiamo allora fare affidamento sui package numpy e matplotlib. Il primo passo sarà includerli nel nostro ambiente virtuale, che allo stato iniziale è organizzato come segue: 
 </div>
 
-<pre><code class="python">print(1,2,3,4)
-# output: 1 2 3 4
-
-print(1,2,3,4,sep='*')
-# output: 1*2*3*4
-
-print(1,2,3,4,sep='#',end='&amp;')
-# output: 1#2#3#4&amp;
+<pre><code>~
+|__virtualenvs
+   |__myvenv
+      |__Include
+      |__Lib
+      |__Scripts
+      |__pyvenv.cfg
+      |__src
+         |__main.py
 </code></pre>
 
 <div style="text-align: justify;">
-A volte vorremmo formattare il nostro output per renderlo più elegante. Ciò può essere fatto usando il metodo <code>str.format()</code>. Questo metodo può essere applicato a qualsiasi oggetto stringa. Nell'esempio seguente, le parentesi graffe <code>{}</code> sono usate come segnaposti per l'inserimento degli oggetti da stampare; possiamo inoltre specificare l'ordine di stampa indicizzando le parentesi stesse, o addirittura utilizzare delle keyword come argomenti al loro interno:
+Per scaricare i package numpy e matplotlib all'interno del nostro ambiente virtuale, dovremo attivare l'ambiente virtuale e poi sfruttare l'utility <code>pip</code> messa a disposizione da Python:
 </div>
 
-<pre><code class="python">print('ordine di arrivo: {0}, {1}'.format('vettel','raikkonen'))
-# output: ordine di arrivo: vettel, raikkonen
-
-print('ordine di arrivo: {1}, {0}'.format('vettel','raikkonen'))
-# output: ordine di arrivo: raikkonen, vettel
-
-print('mi chiamo {nome} {cognome}'.format(nome='franco',cognome='rossi'))
-# output: mi chiamo franco rossi
-</code></pre>
-
-<hr />
-<h2 id="input-mediante-input">Input mediante <code>input()</code></h2>
-<div style="text-align: justify;">
-Fino ad ora, i nostri programmi sono stati statici, nel senso che il valore delle variabili è stato definito o codificato nel codice sorgente.
-
-Per consentire flessibilità, potremmo voler prendere l'input dell'utente. In Python, abbiamo la funzione <code>input()</code> a tal fine. La sintassi per <code>input()</code> è:
-</div>
-
-<pre><code class="python">input([prompt])
+<pre><code>(myvenv) src &gt; pip install numpy
+(myvenv) src &gt; pip install matplotlib
 </code></pre>
 
 <div style="text-align: justify;">
-dove <code>prompt</code> è la stringa (opzionale) che vogliamo mostrare sullo schermo. Val la pena osservare che qualsiasi valore fornito in ingresso dall'utente tramite la funzione <code>input()</code> sarà un oggetto stringa e che, quindi, potrà esserci il bisogno di convertire l'input nel formato desiderato:
+Come conseguenza, i package verranno scaricati nella directory <code>site-packages</code> dell'ambiente virtuale:
 </div>
 
-<pre><code class="python">num = input('inserire un numero intero: ')
-# &gt;&gt;&gt; inserire un numero intero: 
-# &gt;&gt;&gt; 10 
-# l'utente ha inserito il numero 10, ma num è in realtà la stringa '10';
-# la convertiamo perciò in un intero:
-num = int(num)  
+<pre><code>~
+|__virtualenvs
+   |__myvenv
+      |__Include
+      |__Lib
+         |__python3.6
+            |__site-packages
+               |__numpy
+               |__matplotlib
+      |__Scripts
+      |__pyvenv.cfg
+      |__src
+         |__main.py
 </code></pre>
+
+<div style="text-align: justify;">
+A questo punto potremo importare i moduli contenuti nei progetti numpy e matplotlib all'interno del nostro file <code>main.py</code>. In particolare, seguendo le istruzioni contenute nella documentazione ufficiale di <a href="https://matplotlib.org/" target="_blank">matplotlib</a>, potremo plottare la funzione seno inserendo nel nostro file <code>main.py</code> le seguenti istruzioni:
+</div>
+
+<pre><code>import matplotlib
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Data for plotting
+x = np.arange(0, 2*np.pi, 0.01)
+y = np.sin(x)
+
+fig, ax = plt.subplots()
+ax.plot(x, y)
+
+ax.set(xlabel='x axis', ylabel='sin(x)',
+       title='Plot')
+ax.grid()
+
+plt.show()
+</code></pre>
+
+<div style="text-align: justify;">
+ed eseguendolo come al solito. Per consentire la visualizzazione dell'output, riportiamo lo stesso script nella seguente shell interattiva. Lanciando il programma potrete visualizzare il plot della funzione seno.<br><br>
+</div>
+
+<div data-datacamp-exercise data-lang="python" data-height="200px" >
+    <code data-type="sample-code" >
+import matplotlib
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Data for plotting
+x = np.arange(0, 2*np.pi, 0.01)
+y = np.sin(x)
+
+fig, ax = plt.subplots()
+ax.plot(x, y)
+
+ax.set(xlabel='x axis', ylabel='sin(x)',
+       title='Plot')
+ax.grid()
+
+plt.show()
+    </code>
+</div>
 
 <p><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></p>
+<script type="text/javascript" src="//cdn.datacamp.com/dcl-react.js.gz"></script>
                 
                   
                 
@@ -555,7 +656,7 @@ num = int(num)
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../operatori/" title="Operatori" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../moduli/" title="Moduli" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -564,19 +665,19 @@ num = int(num)
                 <span class="md-footer-nav__direction">
                   Precedente
                 </span>
-                Operatori
+                Moduli
               </span>
             </div>
           </a>
         
         
-          <a href="../decision-making/" title="Costrutti condizionali" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../esercizi/" title="Esercizi" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Prossimo
                 </span>
-                Costrutti condizionali
+                Esercizi
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

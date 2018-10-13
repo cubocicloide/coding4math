@@ -36,7 +36,7 @@
     
     
       
-        <title>Input/Output - Coding4Math</title>
+        <title>Progetto finale - Coding4Math</title>
       
     
     
@@ -70,7 +70,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#inputoutput" tabindex="1" class="md-skip">
+      <a href="#progetto-finale" tabindex="1" class="md-skip">
         Vai al contenuto
       </a>
     
@@ -96,7 +96,7 @@
                 Coding4Math
               </span>
               <span class="md-header-nav__topic">
-                Input/Output
+                Progetto finale
               </span>
             
           
@@ -224,56 +224,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Input/Output
-      </label>
-    
-    <a href="./" title="Input/Output" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../input-output/" title="Input/Output" class="md-nav__link">
       Input/Output
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Indice</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#output-mediante-print" title="Output mediante print()" class="md-nav__link">
-    Output mediante print()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#input-mediante-input" title="Input mediante input()" class="md-nav__link">
-    Input mediante input()
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -389,11 +344,20 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../progetto/" title="Progetto finale" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="./" title="Progetto finale" class="md-nav__link md-nav__link--active">
       Progetto finale
     </a>
+    
   </li>
 
     
@@ -414,29 +378,6 @@
     
   
   
-    <label class="md-nav__title" for="toc">Indice</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#output-mediante-print" title="Output mediante print()" class="md-nav__link">
-    Output mediante print()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#input-mediante-input" title="Input mediante input()" class="md-nav__link">
-    Input mediante input()
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -448,93 +389,68 @@
               
                 
                 
-                <h1 id="inputoutput">Input/Output</h1>
+                <h1 id="progetto-finale">Progetto finale</h1>
 <div style="text-align: justify;">
-Python fornisce numerose funzioni integrate che ci consentono di interfacciarci con il prompt.
 
-Alcune di queste funzioni, come ad esempio <code>input()</code> e <code>print()</code>, sono ampiamente utilizzate, rispettivamente, per le operazioni standard di input e output. Incominciamo a vedere per prima la sezione dedicata agli output.
+<!-- <div data-datacamp-exercise data-lang="python" data-height="650px" >
+    <code data-type="sample-code" >
+from urllib.request import urlopen
+
+import json
+import matplotlib.pyplot as plt
+import numpy as np
+
+"""
+16 days forecast api-endpoint (see https://www.weatherbit.io/api/weather-forecast-16-day)
+example: 
+https://api.weatherbit.io/v2.0/forecast/daily?postal_code=72015&country=IT&key=a2e592329c9549dc8906aa5b9e84fc3b
+"""
+
+url_base = 'https://api.weatherbit.io/v2.0/forecast/daily?'
+postal_code = '72100'   # Brindisi
+country = 'IT'          # Italia
+key = 'a2e592329c9549dc8906aa5b9e84fc3b'
+
+url = url_base + 'postal_code=' + postal_code \
+               + '&country=' + country \
+               + '&key=' + key
+
+# try to open the url
+try:
+    data = json.loads(urlopen(url).read().decode('utf-8'))
+# if no data are given in the response, print the exception raised
+except Exception as error:
+    print(error)
+# otherwise, parse the data contained in the response, and plot them
+else:
+    # plot minimum and maximum temperature as function of days
+    day = np.zeros((len(data['data']),1))
+    temperature = np.zeros((len(data['data']),2))
+    for i in range(0,len(data['data'])):
+        day[i] = i
+        temperature[i][0] = data['data'][i]['min_temp']
+        temperature[i][1] = data['data'][i]['max_temp']
+
+    fig, ax = plt.subplots()
+    ax.plot(day, temperature[:,0])
+    ax.plot(day, temperature[:,1])
+
+    ax.set(xlabel='Days', 
+           ylabel='Temperature range', 
+           title= data['city_name'] + ': 16 days weather forecast')
+    ax.grid()
+
+    # show the results
+    plt.show()
+
+    </code>
+</div>  -->
+
+
 </div>
-
-<hr />
-<h2 id="output-mediante-print">Output mediante <code>print()</code></h2>
-<div style="text-align: justify;">
-Come abbiamo già avuto modo di vedere nelle precedenti sezioni, possiamo usare la funzione <code>print()</code> per stampare i dati sul prompt. Un esempio del suo utilizzo è dato qui sotto:
-</div>
-
-<pre><code class="python">print('questa frase viene stampata sullo schermo')
-# output: questa frase viene stampata sullo schermo
-
-a = 5
-print('il valore di a è', a)
-# output: il valore di a è 5
-</code></pre>
-
-<div style="text-align: justify;">
-La sintassi della funzione <code>print()</code> è
-</div>
-
-<pre><code class="python">print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
-</code></pre>
-
-<div style="text-align: justify;">
-Si noti in particolare che:
-<ul>
-<li><code>objects</code> sono gli oggetti che verranno stampati;</li>
-<li><code>sep</code> è il separatore che sarà utilizzato tra i diversi oggetti (il suo valore di default è il carattere spazio);</li>
-<li><code>end</code> è ciò che viene stampato subito dopo gli oggetti (il suo valore di default è <code>\n</code>, che corrisponde all'andata a capo);</li>
-<li><code>file</code> indica dove l'oggetto sarà stampato (il suo valore di default è <code>sys.stdout</code>, ovvero il prompt di Python).</li>
-</ul>
-Di seguito forniamo un esempio in cui variamo alcuni dei valori di default:
-</div>
-
-<pre><code class="python">print(1,2,3,4)
-# output: 1 2 3 4
-
-print(1,2,3,4,sep='*')
-# output: 1*2*3*4
-
-print(1,2,3,4,sep='#',end='&amp;')
-# output: 1#2#3#4&amp;
-</code></pre>
-
-<div style="text-align: justify;">
-A volte vorremmo formattare il nostro output per renderlo più elegante. Ciò può essere fatto usando il metodo <code>str.format()</code>. Questo metodo può essere applicato a qualsiasi oggetto stringa. Nell'esempio seguente, le parentesi graffe <code>{}</code> sono usate come segnaposti per l'inserimento degli oggetti da stampare; possiamo inoltre specificare l'ordine di stampa indicizzando le parentesi stesse, o addirittura utilizzare delle keyword come argomenti al loro interno:
-</div>
-
-<pre><code class="python">print('ordine di arrivo: {0}, {1}'.format('vettel','raikkonen'))
-# output: ordine di arrivo: vettel, raikkonen
-
-print('ordine di arrivo: {1}, {0}'.format('vettel','raikkonen'))
-# output: ordine di arrivo: raikkonen, vettel
-
-print('mi chiamo {nome} {cognome}'.format(nome='franco',cognome='rossi'))
-# output: mi chiamo franco rossi
-</code></pre>
-
-<hr />
-<h2 id="input-mediante-input">Input mediante <code>input()</code></h2>
-<div style="text-align: justify;">
-Fino ad ora, i nostri programmi sono stati statici, nel senso che il valore delle variabili è stato definito o codificato nel codice sorgente.
-
-Per consentire flessibilità, potremmo voler prendere l'input dell'utente. In Python, abbiamo la funzione <code>input()</code> a tal fine. La sintassi per <code>input()</code> è:
-</div>
-
-<pre><code class="python">input([prompt])
-</code></pre>
-
-<div style="text-align: justify;">
-dove <code>prompt</code> è la stringa (opzionale) che vogliamo mostrare sullo schermo. Val la pena osservare che qualsiasi valore fornito in ingresso dall'utente tramite la funzione <code>input()</code> sarà un oggetto stringa e che, quindi, potrà esserci il bisogno di convertire l'input nel formato desiderato:
-</div>
-
-<pre><code class="python">num = input('inserire un numero intero: ')
-# &gt;&gt;&gt; inserire un numero intero: 
-# &gt;&gt;&gt; 10 
-# l'utente ha inserito il numero 10, ma num è in realtà la stringa '10';
-# la convertiamo perciò in un intero:
-num = int(num)  
-</code></pre>
 
 <p><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></p>
+<script type="text/javascript" src="//cdn.datacamp.com/dcl-react.js.gz"></script>
                 
                   
                 
@@ -555,7 +471,7 @@ num = int(num)
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../operatori/" title="Operatori" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../esercizi/" title="Esercizi" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -564,25 +480,11 @@ num = int(num)
                 <span class="md-footer-nav__direction">
                   Precedente
                 </span>
-                Operatori
+                Esercizi
               </span>
             </div>
           </a>
         
-        
-          <a href="../decision-making/" title="Costrutti condizionali" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Prossimo
-                </span>
-                Costrutti condizionali
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>

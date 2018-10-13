@@ -16,6 +16,10 @@ pages:
   - Gestione degli errori: error-handling.md
   - OOP: oop.md
   - Metodi standard: metodi-standard.md
+  - Moduli: moduli.md
+  - Packages: packages.md
+  - Esercizi: esercizi.md
+  - Progetto finale: progetto.md
 
 theme: 
   name: 'material'

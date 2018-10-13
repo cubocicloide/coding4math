@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2018-10-03</lastmod>
+     <lastmod>2018-10-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>/set-up-mac/</loc>
-     <lastmod>2018-10-03</lastmod>
+     <lastmod>2018-10-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,7 +20,7 @@
     
     <url>
      <loc>/set-up-windows/</loc>
-     <lastmod>2018-10-03</lastmod>
+     <lastmod>2018-10-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -28,7 +28,7 @@
     
     <url>
      <loc>/shell-interattiva/</loc>
-     <lastmod>2018-10-03</lastmod>
+     <lastmod>2018-10-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -36,7 +36,7 @@
     
     <url>
      <loc>/sintassi-di-base/</loc>
-     <lastmod>2018-10-03</lastmod>
+     <lastmod>2018-10-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -44,7 +44,7 @@
     
     <url>
      <loc>/variabili/</loc>
-     <lastmod>2018-10-03</lastmod>
+     <lastmod>2018-10-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -52,7 +52,7 @@
     
     <url>
      <loc>/operatori/</loc>
-     <lastmod>2018-10-03</lastmod>
+     <lastmod>2018-10-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -60,7 +60,7 @@
     
     <url>
      <loc>/input-output/</loc>
-     <lastmod>2018-10-03</lastmod>
+     <lastmod>2018-10-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -68,7 +68,7 @@
     
     <url>
      <loc>/decision-making/</loc>
-     <lastmod>2018-10-03</lastmod>
+     <lastmod>2018-10-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -76,7 +76,7 @@
     
     <url>
      <loc>/cicli-iterativi/</loc>
-     <lastmod>2018-10-03</lastmod>
+     <lastmod>2018-10-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -84,7 +84,15 @@
     
     <url>
      <loc>/funzioni/</loc>
-     <lastmod>2018-10-03</lastmod>
+     <lastmod>2018-10-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/error-handling/</loc>
+     <lastmod>2018-10-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -92,7 +100,47 @@
     
     <url>
      <loc>/oop/</loc>
-     <lastmod>2018-10-03</lastmod>
+     <lastmod>2018-10-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/metodi-standard/</loc>
+     <lastmod>2018-10-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/moduli/</loc>
+     <lastmod>2018-10-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/packages/</loc>
+     <lastmod>2018-10-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/esercizi/</loc>
+     <lastmod>2018-10-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/progetto/</loc>
+     <lastmod>2018-10-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
