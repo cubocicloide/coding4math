@@ -1,0 +1,984 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copia">
+      
+        <meta name="lang:clipboard.copied" content="Copiato">
+      
+        <meta name="lang:search.language" content="it">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Nessun documento trovato">
+      
+        <meta name="lang:search.result.one" content="1 documento trovato">
+      
+        <meta name="lang:search.result.other" content="# documenti trovati">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
+    
+    
+      
+        <title>Moduli - Coding4Math</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.8d40d89b.css">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#moduli" tabindex="1" class="md-skip">
+        Vai al contenuto
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Coding4Math" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Coding4Math
+              </span>
+              <span class="md-header-nav__topic">
+                Moduli
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Coding4Math
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Introduzione" class="md-nav__link">
+      Introduzione
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../set-up-mac/" title="Set-up (Mac OS High Sierra)" class="md-nav__link">
+      Set-up (Mac OS High Sierra)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../set-up-windows/" title="Set-up (Windows 10)" class="md-nav__link">
+      Set-up (Windows 10)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../shell-interattiva/" title="Shell interattiva" class="md-nav__link">
+      Shell interattiva
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../sintassi-di-base/" title="Sintassi di base" class="md-nav__link">
+      Sintassi di base
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../variabili/" title="Variabili" class="md-nav__link">
+      Variabili
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../operatori/" title="Operatori" class="md-nav__link">
+      Operatori
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../input-output/" title="Input/Output" class="md-nav__link">
+      Input/Output
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../decision-making/" title="Costrutti condizionali" class="md-nav__link">
+      Costrutti condizionali
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../cicli-iterativi/" title="Cicli iterativi" class="md-nav__link">
+      Cicli iterativi
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../funzioni/" title="Funzioni" class="md-nav__link">
+      Funzioni
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../error-handling/" title="Gestione degli errori" class="md-nav__link">
+      Gestione degli errori
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../oop/" title="OOP" class="md-nav__link">
+      OOP
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../metodi-standard/" title="Metodi standard" class="md-nav__link">
+      Metodi standard
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Moduli
+      </label>
+    
+    <a href="./" title="Moduli" class="md-nav__link md-nav__link--active">
+      Moduli
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Indice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modularizzazione" title="Modularizzazione" class="md-nav__link">
+    Modularizzazione
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#import-statement" title="import statement" class="md-nav__link">
+    import statement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fromimport-statement" title="from...import statement" class="md-nav__link">
+    from...import statement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#95_main__-variable" title="__main__ variable" class="md-nav__link">
+    __main__ variable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#as-keyword" title="as keyword" class="md-nav__link">
+    as keyword
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moduli-standard" title="Moduli standard" class="md-nav__link">
+    Moduli standard
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../packages/" title="Packages" class="md-nav__link">
+      Packages
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../esercizi/" title="Esercizi" class="md-nav__link">
+      Esercizi
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../progetto/" title="Progetto finale" class="md-nav__link">
+      Progetto finale
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Indice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modularizzazione" title="Modularizzazione" class="md-nav__link">
+    Modularizzazione
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#import-statement" title="import statement" class="md-nav__link">
+    import statement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fromimport-statement" title="from...import statement" class="md-nav__link">
+    from...import statement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#95_main__-variable" title="__main__ variable" class="md-nav__link">
+    __main__ variable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#as-keyword" title="as keyword" class="md-nav__link">
+    as keyword
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moduli-standard" title="Moduli standard" class="md-nav__link">
+    Moduli standard
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="moduli">Moduli</h1>
+<div style="text-align: justify;">
+In Python un modulo è essenzialmente un file che contiene del codice scritto in questo linguaggio. I moduli sono caratterizzati dall'estensione <code>.py</code>, quindi al file <code>istruzione.py</code> corrisponderà il nome modulo <code>istruzione</code>.
+Lo scopo dei moduli è duplice: essi contengono istruzioni e definizioni che possono essere riutilizzate quante volte si vuole senza la necessità di doverle riscrivere, basterà importare i moduli dove necessari; inoltre, si rivelano particolarmente comodi per gestire facilmente grandi quantità di codice.
+</div>
+
+<hr />
+<h2 id="modularizzazione">Modularizzazione</h2>
+<div style="text-align: justify;">
+Modularizzare un software significa scomporlo in più moduli, ciascuno dei quali si occupa di svolgere uno dei compiti del programma. Per comprendere meglio, consideriamo una applicazione che si occupi di plottare l'istogramma di una lista di interi positivi, e di trovarne il valore massimo e l'indice della lista in cui viene raggiunto. Il codice che implementa il programma è scritto e commentato qui di seguito:
+</div>
+
+<pre><code>&quot;&quot;&quot;
+Questo script ha il fine di disegnare l'istogramma di una lista di numeri interi positivi e,
+al contempo, di determinare il suo valore massimo e il primo indice in cui viene raggiunto.
+&quot;&quot;&quot;
+
+def positive_integer(vector):
+    &quot;&quot;&quot;
+    Questa funzione ha come parametro una lista, e si occupa di
+    verificare che i suoi elementi siano interi positivi.
+    &quot;&quot;&quot;
+    for val in vector:
+        if (not isinstance(val, int)) or val &lt;= 0:
+            raise ValueError('[ERRORE] Il parametro di input deve essere composto ' + 
+                             'da numeri interi positivi.')
+
+def real_number(vector):
+    &quot;&quot;&quot;
+    Questa funzione ha come parametro una lista, e si occupa di
+    verificare che i suoi elementi siano numeri reali.
+    &quot;&quot;&quot;
+    for val in vector:
+        if not isinstance(val, (int, float)):
+            raise ValueError('[ERRORE] Il parametro di input deve essere composto da numeri reali.')
+
+def hist(vector):
+    &quot;&quot;&quot;
+    Questa funzione ha come parametro una lista di numeri interi positivi,
+    e serve a disegnarne il relativo istogramma sul prompt.
+    &quot;&quot;&quot;
+    try:
+        positive_integer(vector)
+    except ValueError as error:
+        print(&quot;[ERRORE] Non è possibile disegnare l'istogramma.&quot;)
+        print(error)
+    else:
+        char = '*'
+        i = 0
+        for val in vector:
+            print('vector[{0}]: '.format(i) + char*val)
+            i = i + 1
+
+def maximize(vector):
+    &quot;&quot;&quot;
+    Questa funzione ha come parametro una lista di numeri reali,
+    e serve ha trovarne il valore massimo e il primo indice cui appartiene.
+    &quot;&quot;&quot;
+    try:
+        real_number(vector)
+    except ValueError as error:
+        print(&quot;[ERRORE] Non è possibile calcolare il massimo.&quot;)
+        print(error)
+        [argmax, max_] = [None, None]
+    else:
+        argmax = 0
+        max_ = 0
+        i = 0
+        for val in vector:
+            if val &gt; max_:
+                argmax = i
+                max_ = val
+            i = i + 1
+    return [argmax, max_]
+
+# consideriamo una lista di interi positivi
+vector = [5, 9, 3, 4]
+
+# plottiamo l'istogramma della suddetta lista
+hist(vector)
+
+# determiniamo l'indice in cui viene raggiunto il massimo valore
+# e il massimo valore della lista
+[argmax, max_] = maximize(vector)
+
+# stampiamo a video il risultato
+if argmax != None and max_ != None:
+    print('argmax: {0}'.format(argmax))
+    print('max_: {0}'.format(max_))
+</code></pre>
+
+<div style="text-align: justify;">
+Eseguendo la suddetta applicazione, otterremo l'output seguente:
+</div>
+
+<pre><code>vector[0]: *****
+vector[1]: *********
+vector[2]: ***
+vector[3]: ****
+argmax: 1
+max_: 9
+</code></pre>
+
+<div style="text-align: justify;">
+A questo punto, ci accorgiamo subito di una cosa: lo script di cui sopra si compone di un numero ragguardevole di righe di codice. Sorge quindi spontanea una domanda: è possibile scomporre lo script in più file (cioè moduli), ciascuno a sè stante? La risposta è ovviamente sì. Per prima cosa, però, occorre decidere come strutturare la nostra applicazione. Notiamo in particolare che, nel nostro esempio, vi sono:
+<ul>
+<li>due funzioni che si occupano di controllare gli elementi della lista, cioè <code>positive_integer</code> e <code>real_number</code>;</li>
+<li>una funzione che disegna l'istogramma della lista, ovvero <code>hist</code>;</li>
+<li>una funzione adibita alla ricerca del massimo della lista e dell'indice in cui viene raggiunto, detta <code>maximize</code>;</li>
+<li>una porzione di codice in cui viene eseguito un test dell'intera applicazione.</li>
+</ul>
+Tenuto conto di ciò, si può decidere di strutturare il nostro ambiente virtuale come segue:
+</div>
+
+<pre><code>~
+|__virtualenvs
+   |__myvenv
+      |__Include
+      |__Lib
+      |__Scripts
+      |__pyvenv.cfg
+      |__src
+         |__validate.py
+         |__plot.py
+         |__optimization.py
+         |__main.py
+</code></pre>
+
+<div style="text-align: justify;">
+dove, in particolare:
+<ul>
+<li>il modulo <code>validate</code> conterrà le funzioni che si occupano di validare gli elementi della lista;</li>
+<li>il modulo <code>plot</code> conterrà la funzione che si occupa di disegnare l'istogramma della lista;</li>
+<li>il modulo <code>optimization</code> conterrà la funzione che determina il massimo e l'argomento del massimo della lista;</li>
+<li>il modulo <code>main</code> conterrà le istruzioni che verranno eseguite dall'applicazione.</li>
+</ul>
+Iniziamo col definire il modulo <code>validate</code>. Esso conterrà le funzioni <code>positive_integer</code> e <code>real_number</code>, e pertanto sarà dato da:
+</div>
+
+<pre><code>&quot;&quot;&quot;
+Modulo validate: si occupa di validare gli elementi di una lista.
+&quot;&quot;&quot;
+
+def positive_integer(vector):
+    &quot;&quot;&quot;
+    Questa funzione ha come parametro una lista, e si occupa di
+    verificare che i suoi elementi siano interi positivi.
+    &quot;&quot;&quot;
+    for val in vector:
+        if (not isinstance(val, int)) or val &lt;= 0:
+            raise ValueError('[ERRORE] Il parametro di input deve essere composto ' + 
+                             'da numeri interi positivi.')
+
+def real_number(vector):
+    &quot;&quot;&quot;
+    Questa funzione ha come parametro una lista, e si occupa di
+    verificare che i suoi elementi siano numeri reali.
+    &quot;&quot;&quot;
+    for val in vector:
+        if not isinstance(val, (int, float)):
+            raise ValueError('[ERRORE] Il parametro di input deve essere composto da numeri reali.')
+</code></pre>
+
+<hr />
+<h2 id="import-statement"><code>import</code> statement</h2>
+<div style="text-align: justify;">
+Il prossimo modulo da definire è <code>plot</code>, il quale dovrà contenere la funzione <code>hist</code>. Ci accorgiamo però che questa funzione contiene una chiamata alla funzione <code>real_number</code> che adesso risiede nel modulo <code>validate</code>. Bisogna quindi fare in modo che, all'interno del modulo <code>plot</code>, sia possibile riferirsi a tale funzione. A tal fine, Python mette a disposizione l'istruzione <code>import</code>, da inserire all'inizio del modulo, che consente di importare tutti i moduli necessari alla definizione del file di interesse. In tal caso verrà usata come segue:
+</div>
+
+<pre><code>&quot;&quot;&quot;
+Modulo plot: si occupa di disegnare gli elementi di una lista.
+&quot;&quot;&quot;
+
+# importiamo i moduli necessari
+import validate
+
+def hist(vector):
+    &quot;&quot;&quot;
+    Questa funzione ha come parametro una lista di numeri interi positivi,
+    e serve a disegnarne il relativo istogramma sul prompt.
+    &quot;&quot;&quot;
+    try:
+        # validiamo gli elementi della lista tramite la funzione positive_integer
+        # del modulo validate importato all'inizio
+        validate.positive_integer(vector) 
+    except ValueError as error:
+        print(&quot;[ERRORE] Non è possibile disegnare l'istogramma.&quot;)
+        print(error)
+    else:
+        char = '*'
+        i = 0
+        for val in vector:
+            print('vector[{0}]: '.format(i) + char*val)
+            i = i + 1
+</code></pre>
+
+<div style="text-align: justify;">
+Si noti l'istruzione <code>import validate</code> all'inizio del file, che ci ha consentito di importare il modulo <code>validate</code>, e l'utilizzo dell'istruzione <code>validate.positive_integer(vector)</code> per effettuare una chiamata alla funzione <code>positive_integer</code> del modulo <code>validate</code>.
+</div>
+
+<hr />
+<h2 id="fromimport-statement"><code>from...import</code> statement</h2>
+<div style="text-align: justify;">
+Osserviamo che l'istruzione <code>import</code> consente di importare tutte le funzioni e le classi presenti nel modulo importato. Questo può tradursi in un calo delle performance, specie quando ci servono solo poche funzionalità del modulo importato. Proseguendo col nostro esempio, ci accorgiamo che il modulo <code>plot</code> necessita di importare, dal modulo <code>validate</code>, la sola funzione <code>positive_integer</code>. Al fine di importare solo le funzionalità necessarie, Python mette a disposizione lo statement <code>from nome_modulo import funzione_o_classe</code>, che nel caso del modulo <code>plot</code> si traduce in quanto segue:
+</div>
+
+<pre><code>&quot;&quot;&quot;
+Modulo plot: si occupa di disegnare gli elementi di una lista.
+&quot;&quot;&quot;
+
+# dal modulo validate importiamo la funzione positive_integer
+from validate import positive_integer
+
+def hist(vector):
+    &quot;&quot;&quot;
+    Questa funzione ha come parametro una lista di numeri interi positivi,
+    e serve a disegnarne il relativo istogramma sul prompt.
+    &quot;&quot;&quot;
+    try:
+        # validiamo gli elementi della lista tramite la funzione positive_integer
+        # importata all'inizio
+        positive_integer(vector) 
+    except ValueError as error:
+        print(&quot;[ERRORE] Non è possibile disegnare l'istogramma.&quot;)
+        print(error)
+    else:
+        char = '*'
+        i = 0
+        for val in vector:
+            print('vector[{0}]: '.format(i) + char*val)
+            i = i + 1
+</code></pre>
+
+<div style="text-align: justify;">
+Si noti l'istruzione <code>from validate import positive_integer</code> all'inizio del file, che ci ha consentito di importare la funzione <code>positive_integer</code> dal modulo <code>validate</code>. Inoltre, a differenza dello statement <code>import</code>, la chiamata alla funzione importata non necessita della sintassi <code>validate.positive_integer(vector)</code>.<br>
+&nbsp; Seguendo la stessa filosofia, definiamo il modulo <code>optimization</code>, il quale necessita, per il calcolo del massimo, della funzione <code>real_numer</code> del modulo <code>validate</code>. Pertanto tale modulo sarà così definito:
+</div>
+
+<pre><code>&quot;&quot;&quot;
+Modulo optimization: si occupa di risolvere problemi di ottimizzazione.
+&quot;&quot;&quot;
+
+# dal modulo validate importiamo la funzione real_number
+from validate import real_number
+
+def maximize(vector):
+    &quot;&quot;&quot;
+    Questa funzione ha come parametro una lista di numeri reali,
+    e serve ha trovarne il valore massimo e il primo indice cui appartiene.
+    &quot;&quot;&quot;
+    try:
+        real_number(vector)
+    except ValueError as error:
+        print(&quot;[ERRORE] Non è possibile calcolare il massimo.&quot;)
+        print(error)
+        [argmax, max_] = [None, None]
+    else:
+        argmax = 0
+        max_ = 0
+        i = 0
+        for val in vector:
+            if val &gt; max_:
+                argmax = i
+                max_ = val
+            i = i + 1
+    return [argmax, max_]
+</code></pre>
+
+<hr />
+<h2 id="95_main__-variable"><code>__main__</code> variable</h2>
+<div style="text-align: justify;">
+Per terminare la modularizzazione della nostra applicazione, resta da definire il modulo <code>main</code>, che sarà il modulo da cui verrà eseguito il programma. Per la sua definizione, è buona norma introdurre una funzione <code>main()</code>, la quale verrà eseguita solo se il file <code>main.py</code> viene mandato in esecuzione dall'interprete Python. Quando ciò avviene, l'interprete assegna al fine <code>main.py</code> una variabile standard <code>__name__</code> con valore uguale a <code>"__main__"</code>. Di conseguenza, il modulo si articola come segue:
+</div>
+
+<pre><code>&quot;&quot;&quot;
+Modulo main: è il modulo da cui viene lanciata l'applicazione.
+&quot;&quot;&quot;
+
+# importiamo le funzioni necessarie all'esecuzione del programma
+from optimization import maximize
+from plot import hist
+
+def main():
+    &quot;&quot;&quot;
+    Questa funzione contiene le istruzioni che andranno eseguite 
+    quando il file main.py viene mandato in esecuzione.
+    &quot;&quot;&quot;
+
+    # consideriamo una lista di interi positivi
+    vector = [5, 9, 3, 4]
+
+    # plottiamo l'istogramma della suddetta lista
+    hist(vector)
+
+    # determiniamo l'indice in cui viene raggiunto il massimo valore
+    # e il massimo valore della lista
+    [argmax, max_] = maximize(vector)
+
+    # stampiamo a video il risultato
+    if argmax != None and max_ != None:
+        print('argmax: {0}'.format(argmax))
+        print('max_: {0}'.format(max_))
+
+if __name__ == '__main__':
+    main()
+</code></pre>
+
+<div style="text-align: justify;">
+A questo punto, una volta attivato l'ambiente virtuale, potremo lanciare il <code>main.py</code> all'interno della cartella <code>src</code> come al solito:
+</div>
+
+<pre><code>(myvenv) src &gt; python main.py
+</code></pre>
+
+<div style="text-align: justify;">
+e l'output prodotto sarà esattamente quello previsto:
+</div>
+
+<pre><code>vector[0]: *****
+vector[1]: *********
+vector[2]: ***
+vector[3]: ****
+argmax: 1
+max_: 9
+</code></pre>
+
+<div style="text-align: justify;">
+Vale la pena osservare che, una volta lanciato il file <code>main.py</code>, il file system presenterà una nuova cartella, generata automaticamente dall'interprete e denominata <code>__pycache__</code>, la quale conterrà i moduli <code>validate</code>, <code>plot</code>, <code>optimization</code> (oggetto di importazione da parte del <code>main</code>) tradotti in linguaggio macchina, e che quindi avranno estensione <code>.pyc</code>. In particolare, il file system si presenterà così:
+</div>
+
+<pre><code>~
+|__virtualenvs
+   |__myvenv
+      |__Include
+      |__Lib
+      |__Scripts
+      |__pyvenv.cfg
+      |__src
+         |__validate.py
+         |__plot.py
+         |__optimization.py
+         |__main.py
+         |__ __pycache__
+            |__validate.pyc
+            |__plot.pyc
+            |__optimization.pyc
+</code></pre>
+
+<hr />
+<h2 id="as-keyword"><code>as</code> keyword</h2>
+<div style="text-align: justify;">
+È possibile rinominare un modulo, ossia assegnargli un alias, attraverso la parola chiave <code>as</code>. Considerando ad esempio il modulo <code>validate</code>, potremmo importarlo nel modulo <code>plot</code> col nome <code>val</code>:
+</div>
+
+<pre><code>import validate as val
+</code></pre>
+
+<div style="text-align: justify;">
+A questo punto potremo chiamare la funzione <code>positive_integer</code> all'interno di <code>plot</code> tramite il comando
+</div>
+
+<pre><code>val.positive_integer(vector)
+</code></pre>
+
+<hr />
+<h2 id="moduli-standard">Moduli standard</h2>
+<div style="text-align: justify;">
+Per comodità degli sviluppatori, Python prevede un gran numero di moduli standard, forniti nativamente dal linguaggio, per svolgere diversi compiti.
+Questi moduli sono importabili tramite la stessa sintassi utilizzabile per i moduli definiti dagli utenti.<br>
+&nbsp; Per proporre un esempio, possiamo prendere in considerazione il modulo <code>math</code> che, come suggerisce il nome, consente di gestire alcune operazioni, funzioni e costanti matematiche di base. Ad esempio, volendo stampare il numero pi-greco, basterà eseguire il seguente script
+</div>
+
+<pre><code>import math
+print(math.pi)
+</code></pre>
+
+<div style="text-align: justify;">
+Così come i moduli definiti dagli utenti, anche i moduli standard possono essere rinominati. Nello stesso modo è possibile importare soltanto parti specifiche di un modulo, o tutte le definizioni e le istruzioni che lo compongono.
+</div>
+
+<p><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../metodi-standard/" title="Metodi standard" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Precedente
+                </span>
+                Metodi standard
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../packages/" title="Packages" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Prossimo
+                </span>
+                Packages
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © Copyright 2018, Francesco Sasso.
+          </div>
+        
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.b438e6c5.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.it.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
