@@ -130,7 +130,7 @@ import numpy as np
 x = np.arange(0, 2*np.pi, 0.01)
 y = np.sin(x)
 
-fig, ax = plt.subplots()
+ax = plt.subplots()
 ax.plot(x, y)
 
 ax.set(xlabel='x axis', ylabel='sin(x)',
@@ -153,7 +153,7 @@ import numpy as np
 x = np.arange(0, 2*np.pi, 0.01)
 y = np.sin(x)
 
-fig, ax = plt.subplots()
+ax = plt.subplots()
 ax.plot(x, y)
 
 ax.set(xlabel='x axis', ylabel='sin(x)',
