@@ -354,9 +354,45 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Progetto finale
+      </label>
+    
     <a href="./" title="Progetto finale" class="md-nav__link md-nav__link--active">
       Progetto finale
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Indice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#esempio-di-rubrica-scritta-in-formato-json-nome-file-rubricajson" title="Esempio di rubrica scritta in formato .json (nome file: rubrica.json)" class="md-nav__link">
+    Esempio di rubrica scritta in formato .json (nome file: rubrica.json)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leggere-da-e-scrivere-su-rubricajson-nome-modulo-rubricapy" title="Leggere da e scrivere su rubrica.json (nome modulo: rubrica.py)" class="md-nav__link">
+    Leggere da e scrivere su rubrica.json (nome modulo: rubrica.py)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -378,6 +414,29 @@
     
   
   
+    <label class="md-nav__title" for="toc">Indice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#esempio-di-rubrica-scritta-in-formato-json-nome-file-rubricajson" title="Esempio di rubrica scritta in formato .json (nome file: rubrica.json)" class="md-nav__link">
+    Esempio di rubrica scritta in formato .json (nome file: rubrica.json)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leggere-da-e-scrivere-su-rubricajson-nome-modulo-rubricapy" title="Leggere da e scrivere su rubrica.json (nome modulo: rubrica.py)" class="md-nav__link">
+    Leggere da e scrivere su rubrica.json (nome modulo: rubrica.py)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -390,6 +449,67 @@
                 
                 
                 <h1 id="progetto-finale">Progetto finale</h1>
+<h3 id="esempio-di-rubrica-scritta-in-formato-json-nome-file-rubricajson">Esempio di rubrica scritta in formato <code>.json</code> (nome file: <code>rubrica.json</code>)</h3>
+<pre><code class="json">{&quot;contatti&quot;: [
+    {&quot;cognome&quot;: &quot;Notarnicola&quot;, 
+     &quot;nome&quot;: &quot;Ivano&quot;, 
+     &quot;cellulare&quot;: &quot;3327493810&quot;}, 
+    {&quot;cognome&quot;: &quot;Sasso&quot;, 
+     &quot;nome&quot;: &quot;Francesco&quot;, 
+     &quot;cellulare&quot;: &quot;3348975936&quot;}, 
+    {&quot;cognome&quot;: &quot;Spedicato&quot;, 
+     &quot;nome&quot;: &quot;Sara&quot;, 
+     &quot;cellulare&quot;: &quot;3384414186&quot;}
+    ]
+}
+</code></pre>
+
+<h3 id="leggere-da-e-scrivere-su-rubricajson-nome-modulo-rubricapy">Leggere da e scrivere su <code>rubrica.json</code> (nome modulo: <code>rubrica.py</code>)</h3>
+<pre><code class="python">&quot;&quot;&quot;
+Questo modulo si occupa di leggere e scrivere dati sul file rubrica.json
+&quot;&quot;&quot;
+
+# importo il modulo json necessario caricare i dati contenuti in rubrica.json
+import json
+
+# path dove è ubicato il file di rubrica (i.e., rubrica.json)
+RUBRICA = './rubrica.json'
+
+def leggi():
+    &quot;&quot;&quot;
+    Questa funzione si occupa di leggere il contenuto della RUBRICA
+    &quot;&quot;&quot;
+    with open(RUBRICA) as json_data:
+        elenco = json.load(json_data)
+    return elenco
+
+def scrivi(elenco):
+    &quot;&quot;&quot;
+    Questa funzione si occupa di scrivere sulla RUBRICA
+    &quot;&quot;&quot;
+    with open(RUBRICA, 'w') as outfile:  
+        json.dump(elenco, outfile)
+
+# testiamo il modulo
+if __name__==&quot;__main__&quot;:
+
+    # preleviamo l'elenco dei contatti dalla RUBRICA
+    elenco = leggi()
+
+    # aggiungiamo un nuovo contatto nell'elenco
+    contatto = { &quot;nome&quot;: &quot;Biagio&quot;,
+                 &quot;cognome&quot;: &quot;Faleni&quot;,
+                 &quot;cellulare&quot;: 3387985594 }
+    elenco[&quot;contatti&quot;].append(contatto)
+
+    # stampiamo il nuovo elenco di contatti
+    print(elenco[&quot;contatti&quot;])
+
+    # scriviamo il nuovo elenco nella RUBRICA
+    scrivi(elenco)
+
+</code></pre>
+
 <div style="text-align: justify;">
 
 <!-- <div data-datacamp-exercise data-lang="python" data-height="650px" >

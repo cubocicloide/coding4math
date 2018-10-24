@@ -2,16 +2,23 @@
 
 ### Esempio di rubrica scritta in formato <code>.json</code> (nome file: <code>rubrica.json</code>)
 ```json
-{"contatti": [
-    {"cognome": "Notarnicola", 
-     "nome": "Ivano", 
-     "cellulare": "3327493810"}, 
-    {"cognome": "Sasso", 
-     "nome": "Francesco", 
-     "cellulare": "3348975936"}, 
-    {"cognome": "Spedicato", 
-     "nome": "Sara", 
-     "cellulare": "3384414186"}
+{
+    "contatti": [
+        {
+            "cognome": "Notarnicola", 
+            "nome": "Ivano", 
+            "cellulare": "3327493810"
+        }, 
+        {
+            "cognome": "Sasso", 
+            "nome": "Francesco", 
+            "cellulare": "3348975936"
+        }, 
+        {
+            "cognome": "Spedicato", 
+            "nome": "Sara", 
+            "cellulare": "3384414186"
+        }
     ]
 }
 ```
