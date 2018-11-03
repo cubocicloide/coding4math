@@ -18,8 +18,7 @@ pages:
   - Metodi standard: metodi-standard.md
   - Moduli: moduli.md
   - Packages: packages.md
-  - Esercizi: esercizi.md
-  - Progetto finale: progetto.md
+  - Esercitazioni: esercitazioni.md
 
 theme: 
   name: 'material'
